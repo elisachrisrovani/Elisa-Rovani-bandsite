@@ -18,10 +18,11 @@
         @include tablet{
             font-size: 3rem;
             margin: 25px 0;
-            //padding-left: 100px;
+            
         }
         @include desktop{
             padding-left: 100px;
+            font-size: 2.5rem;
         }
     }
     img{
@@ -33,32 +34,34 @@
        @include tablet{
         height: 65vh;
         width: 45rem;
+        margin-bottom: 30px;
        }
     }
 
     &__text{
         font-family: Avenir-regular;
-        font-size: 20px;
-        line-height: 26px;
+        font-size: 19px;
+        line-height: 28px;
         padding: 0 1rem;
-        margin-bottom: 10px;
-
+        margin: 10px 0;
+       
         @include tablet{
             font-family: Avenir-demi;
             width: 750px;
             font-size: 28px;
-            line-height: 36px;
+            line-height: 40px;
             padding: 0 4rem;
+            margin: auto;
         }
         &__signature{
             font-family: Avenir-regular;
-            font-size: 20px;
-            line-height: 26px;
+            font-size: 19px;
             padding: 0 1rem;
             margin-top: 0;
 
             @include tablet{
                padding: 0 4rem;
+               margin-top: 10px;
             }
         }
     }
