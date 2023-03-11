@@ -1,149 +1,18 @@
-@import './variables';
+
 
 //Header Section//
 
-@mixin desktop-header-top{
+@mixin desktop{
   @media (min-width: 1280px){
-    background-color: $bandSite-black;
-    height: 40px;
-    width: 100%;
-    display: flex;
-  }
-  @content();
-}
-
-@mixin tablet-header-top{
-  @media (min-width: 768px) and (max-width: 1279px){
-    background-color: $bandSite-black;
-    height: 60px;
-    width: 100%;
-    display: flex;
-    
-  }
-  @content();
-}
-@mixin desktop-header{
-  @media (min-width: 1280px){
-    color: $white;
-    font-size: 24px;
-            line-height: 32px;
-            font-weight: 400;
-            text-decoration: none;
-            color: $white;
-            background-color: $bandSite-darkBlack;
-            height: 20px;
-            width: 120px;
-            
-            
-            
     @content();
   }
+  
 }
-@mixin tablet-header{
-  @media (min-width: 768px) and (max-width: 1279px){
-    line-height: 32px;
-            font-weight: 400;
-            text-decoration: none;
-            color: $white;
-            background-color: $bandSite-darkBlack;
-            height: 20px;
-            width: 120px;
+
+@mixin tablet{
+  @media (min-width: 768px){
     @content();
   }
+  
 }
 
-@mixin desktop-head{
-  @media (min-width: 1280px){
-          color: $white;
-          font-size: 24px;
-          line-height: 32px;
-          font-weight: 600;       
-          list-style-type: none;
-          text-decoration: none;
-          display: flex;
-          
-            
-    @content();
-  }
-}
-@mixin tablet-head{
-  @media (min-width: 768px) and (max-width: 1279px){
-    color: $white;
-    font-size: 24px;
-    line-height: 32px;
-    font-weight: 600;       
-    list-style-type: none;
-    text-decoration: none;
-    display: flex;
-    
-    @content();
-  }
-}
-
-@mixin desktop-nav-bar{
-  @media (min-width: 1280px){
-    display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-bottom: 0;
-        @content();
-  }
-}
-
-//Hero Section//
-@mixin desktop-hero{
-  @media (min-width: 1280px){
-  background-image: url(/assets/images/hero-bio.jpg);
-    height: 450px;
-    background-position: center;
-    background-size: cover;
-    margin-top: 0;
-    @content();
-  }
-}
-
-@mixin tablet-hero{
-  @media (min-width: 768px) and (max-width: 1279px){
-  background-image: url(/assets/images/hero-bio.jpg);
-    height: 450px;
-    background-position: center;
-    background-size: cover;
-    margin-top: 0;
-    @content();
-  }
-}
-
-
-@mixin desktop-hero-title{
-  @media (min-width: 1280px){
-    font-size: 60px;
-    line-height: 68px;
-    font-weight: 700;
-    color:$white;
-    position: absolute;
-    top: 30%;
-    left: 10%;
-    @content();
-  }
-}
-
-@mixin tablet-hero-title{
-  @media (min-width: 768px) and (max-width: 1279px){
-    font-size: 60px;
-    line-height: 68px;
-    font-weight: 700;
-    color:$white;
-    position: absolute;
-    top: 30%;
-    left: 10%;
-    @content();
-  }
-}
-
-
-
-@mixin mobile{
-  @media (max-width: 767px) {
-    @content();    
-  }
-}

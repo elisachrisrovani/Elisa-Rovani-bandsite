@@ -12,29 +12,42 @@
     height: 50vh;
     min-width: auto;
     background-size:cover;
-   
+
+    @include tablet{
+        height: 80vh;
+        width: 100vw;
+        
+    }
+    
    
     &::before{
         content: "";
         position: absolute;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
-        left: 0px;
+        top: 0rem;
+        right: 0rem;
+        bottom: 0rem;
+        left: 0rem;
         background-color: rgba(50,50,50,0.50);
     }
     
     
 
     &__title{
-        font-size: 2rem;
-        line-height: 2rem;
+        font-size: 32px;
+        line-height: 32px;
         color:$white;
         position: relative;
         font-family: Avenir-regular;
         top: 25%;
         right: 40%;
        
+        @include tablet{
+            font-size: 60px;
+            position: absolute;
+            left: 5%;
+            top: 35%;
+            font-family: Avenir-demi;
+        }
     }
    
 }

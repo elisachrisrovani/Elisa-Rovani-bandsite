@@ -4,8 +4,14 @@
 //Header
 header{
     background-color: $bandSite-black;
-    color: $white;
-    height: 5.8rem;
+    height: 13vh;
+    
+    @include tablet{
+      height: 10vh;
+    }
+    @include desktop{
+       
+    }
     
     
 }
@@ -14,21 +20,38 @@ header{
     flex-direction: column;
     padding: 0.5rem;
 
-      
+    @include tablet{
+      flex-direction: row;
+        justify-content: left;
+        width: 500px;
+        margin-top: 10px;
+    }
+
+    
     &__logo{
             
             margin: auto;
            img{
             width: 150px;
             background-color: $bandSite-darkBlack;
-                        
+              
+            @include tablet{
+                width: 150px;
+                margin-top: 10px;
+                
+            }
+            @include desktop{
+                width: 120px;
+                margin-top: 10px;
+                
+            }
            }
                         
-        
     }
        
 }
-    
+
+
 .nav-bar{
    
     
@@ -37,58 +60,76 @@ header{
         justify-content: space-around;
         margin-bottom: 0;
         
-                
-        @include desktop-nav-bar();
-    
     }
     &__nav-item{
 
        width: 50%;
-      
-
-        &:hover{
-            border-bottom: 0.20rem $white solid;
-            padding-bottom: 1.2rem;
-            
-        }
+    
+       
         li{
             list-style-type: none;
         }
         &__title{
-            font-size:20px;
+            font-size:1.25rem;
             font-weight:400;
-            line-height: 12px;
+            line-height: 0.75rem;
             color: $white;
             text-decoration: none;
             font-family: Avenir-regular;
-            padding: 0 30px 18px 20px;
+            padding: 0 1.875rem 1.125rem 1.25rem;
             text-align: left;
             width: 50%;
+            &:hover{
+                    border-bottom: 0.2rem $white solid;
+                    padding-bottom: 1.9rem;
+                    
+                }
+            @include tablet{
+                font-size: 1.2rem;
+
+            }
+            @include desktop{
+                font-size: 1.0rem;
+
+            }
+
             &--highlighted{
             
-            font-size:20px;
+            font-size:1.25rem;
             font-weight:400;
-            line-height: 12px;
+            line-height: 0.75rem;
             color: $white;
             text-decoration: none;
             font-family: Avenir-regular;
             border-bottom: $white solid;
-            border-width: 5px;
-            padding-bottom: 0.97rem;
-            padding-left: 50px;
-            padding-right: 40px;
-            
+            border-width: 0.3125rem;
+            padding-bottom: 15.52px;
+            padding-left: 3.125rem;
+            padding-right: 2.5rem;
+            &:hover{
+                border-bottom: 0.2rem $white solid;
+                padding-bottom: 1.9rem;
+                
+            }
+            @include tablet{
+                padding: 1.5rem 0;
+                border-width: 0.29rem;
+                font-size: 1.2rem;
+                
+            }
+            @include desktop{
+                padding: 1.5rem 0;
+                border-width: 0.29rem;
+                font-size: 1.0rem;
+            }
              
             }
               &:hover{
                    font-weight: 700;
                                         
                 }
-               
+            }
         }
-       
-       
-    }
     
     }
 

@@ -14,12 +14,26 @@
         padding: 0 1rem;
         margin: 2px 0 15px;
         text-align: left;
+
+        @include tablet{
+            font-size: 3rem;
+            margin: 25px 0;
+            //padding-left: 100px;
+        }
+        @include desktop{
+            padding-left: 100px;
+        }
     }
     img{
        max-width: 100%;
        height: 40vh;
        padding: 0 2rem 0 1rem;
        margin: auto;
+
+       @include tablet{
+        height: 65vh;
+        width: 45rem;
+       }
     }
 
     &__text{
@@ -28,12 +42,24 @@
         line-height: 26px;
         padding: 0 1rem;
         margin-bottom: 10px;
+
+        @include tablet{
+            font-family: Avenir-demi;
+            width: 750px;
+            font-size: 28px;
+            line-height: 36px;
+            padding: 0 4rem;
+        }
         &__signature{
             font-family: Avenir-regular;
             font-size: 20px;
             line-height: 26px;
             padding: 0 1rem;
             margin-top: 0;
+
+            @include tablet{
+               padding: 0 4rem;
+            }
         }
     }
     
