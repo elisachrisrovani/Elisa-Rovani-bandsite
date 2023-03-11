@@ -1,0 +1,21 @@
+.gallery{
+    h2{
+        font-family: Avenir-demi;
+        padding: 0 1rem;
+    }
+}
+
+.photo-gallery{
+
+
+    &__block{
+        padding: 0 1rem;
+        img{
+       max-width: 100%;
+       height: 40vh;
+       margin-bottom: 15px;
+       
+      // margin: auto;
+        }
+    }
+}

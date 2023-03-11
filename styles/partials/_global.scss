@@ -1,0 +1,137 @@
+@import "./mixins";
+@import "./variables";
+
+//Header
+header{
+    background-color: $bandSite-black;
+    color: $white;
+    height: 5.8rem;
+    
+    
+}
+.header-top{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+
+      
+    &__logo{
+            
+            margin: auto;
+           img{
+            width: 150px;
+            background-color: $bandSite-darkBlack;
+                        
+           }
+                        
+        
+    }
+       
+}
+    
+.nav-bar{
+   
+    
+    &__nav-list{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 0;
+        
+                
+        @include desktop-nav-bar();
+    
+    }
+    &__nav-item{
+
+       width: 50%;
+      
+
+        &:hover{
+            border-bottom: 0.20rem $white solid;
+            padding-bottom: 1.2rem;
+            
+        }
+        li{
+            list-style-type: none;
+        }
+        &__title{
+            font-size:20px;
+            font-weight:400;
+            line-height: 12px;
+            color: $white;
+            text-decoration: none;
+            font-family: Avenir-regular;
+            padding: 0 30px 18px 20px;
+            text-align: left;
+            width: 50%;
+            &--highlighted{
+            
+            font-size:20px;
+            font-weight:400;
+            line-height: 12px;
+            color: $white;
+            text-decoration: none;
+            font-family: Avenir-regular;
+            border-bottom: $white solid;
+            border-width: 5px;
+            padding-bottom: 0.97rem;
+            padding-left: 50px;
+            padding-right: 40px;
+            
+             
+            }
+              &:hover{
+                   font-weight: 700;
+                                        
+                }
+               
+        }
+       
+       
+    }
+    
+    }
+
+    //Footer
+
+    .container{
+        background-color: $bandSite-black;
+        font-family: Avenir-regular;
+        color: $white;
+        padding: 0.5rem 1rem;
+        margin-top: 0;
+
+        &-block{
+            &__top{
+                h3{
+                    font-size: 30px;
+                    margin-bottom: 25px;
+                }
+            
+        }
+        &__img{
+            width: 30px;
+            //padding: 0 15px;
+            margin: 0px 45px 10px 1px;
+            &--facebook{
+                width: 18px;
+                margin: 0 45px 10px 1px;
+            }
+        }
+        &__item{
+
+            margin-top: 20px;
+            h4, p{
+                margin: 5px;
+               
+        }
+        
+    }
+}       &__logo{
+        background-color: $bandSite-darkBlack;
+        width: 150px;
+        margin-top: 110px;
+      
+}
+            
+    }

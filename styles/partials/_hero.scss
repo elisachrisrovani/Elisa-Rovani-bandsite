@@ -1,0 +1,40 @@
+@import './mixins';
+@import './global';
+@import './variables';
+
+.hero{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/assets/images/hero-bio.jpg);
+    height: 50vh;
+    min-width: auto;
+    background-size:cover;
+   
+   
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-color: rgba(50,50,50,0.50);
+    }
+    
+    
+
+    &__title{
+        font-size: 2rem;
+        line-height: 2rem;
+        color:$white;
+        position: relative;
+        font-family: Avenir-regular;
+        top: 25%;
+        right: 40%;
+       
+    }
+   
+}
