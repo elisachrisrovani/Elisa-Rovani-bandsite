@@ -425,8 +425,8 @@ header {
 }
 @media (min-width: 1280px) {
   .biography__title {
-    padding-left: 100px;
-    font-size: 2.5rem;
+    padding-left: 200px;
+    font-size: 2rem;
   }
 }
 .biography img {
@@ -440,6 +440,12 @@ header {
     height: 65vh;
     width: 45rem;
     margin-bottom: 30px;
+  }
+}
+@media (min-width: 1280px) {
+  .biography img {
+    width: 55rem;
+    height: 75vh;
   }
 }
 .biography__text {
@@ -459,6 +465,14 @@ header {
     margin: auto;
   }
 }
+@media (min-width: 1280px) {
+  .biography__text {
+    font-size: 22px;
+    line-height: 36px;
+    width: 655px;
+    margin-left: 250px;
+  }
+}
 .biography__text__signature {
   font-family: Avenir-regular;
   font-size: 19px;
@@ -469,6 +483,12 @@ header {
   .biography__text__signature {
     padding: 0 4rem;
     margin-top: 10px;
+  }
+}
+@media (min-width: 1280px) {
+  .biography__text__signature {
+    font-size: 16px;
+    margin-left: 250px;
   }
 }
 
