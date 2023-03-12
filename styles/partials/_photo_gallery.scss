@@ -31,7 +31,7 @@
         }
       
         img{
-       max-width: 100%;
+       width: 100%;
        height: 30vh;
        margin-bottom: 0.9375rem;
        
@@ -39,7 +39,7 @@
        @include tablet{
         width: 30%;
         height: 11.25rem;
-        padding: 16px 8px 24px 16px;
+        padding: 16px 16px 24px 16px;
        }
 
        @include desktop{

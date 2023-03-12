@@ -137,39 +137,71 @@ header{
 
     //Footer
     footer{
-        //overflow-x: hidden;
-    }
-
-    .container{
         background-color: $bandSite-black;
         font-family: Avenir-regular;
         color: $white;
-        padding: 0.5rem 1rem;
+        //padding: 0.5rem 1rem;
         margin-top: 0;
+    }
 
-       
+    .container{
+       padding: 0.5rem 3rem;
+       width: 80%;
+
+        @include tablet{
+            padding: 0.5 rem 5rem;
+            width: 100%;
+        }
+        @include desktop{
+            //padding: 0.5 rem 35rem;
+            width: 60%;
+            margin-left: 150px;
+        }
         
         &-block{
 
             @include tablet{
             display: flex;
+            margin-bottom: 0;
+            
            
             }
             &__top{
 
                 @include tablet{
                     display: flex;
-                    width: 80%;
+                    flex-direction: row;
+                    width: 100%;
                 }
+
+                &__logo{
+                  
+                  img{  background-color: $bandSite-darkBlack;
+                    width: 150px;
+                    //margin-top: 110px;
+            
+                    @include tablet{
+                    width: 160px;
+                    position: relative;
+                    bottom: 290px;
+                    left: 810px;
+                                      
+                    }
+
+                    @include desktop{
+                    left: 940px;
+                    }
+                }
+            }
                 h3{
                     font-size: 30px;
                     margin-bottom: 25px;
 
                     @include tablet{
                         font-size: 40px;
-                       
                         width: 30%;
                     }
+                    
                 }
             
         }
@@ -211,19 +243,8 @@ header{
         }
         
     }
-}       &__logo{
-        background-color: $bandSite-darkBlack;
-        width: 150px;
-        margin-top: 110px;
-
-        @include tablet{
-            width: 160px;
-           position: absolute;
-           bottom: -2202px;
-           left: 900px;
-        }
-}
+}      
         &__foot{
-            margin-top: 85px;
+            //margin-top: 10px;
         }
     }
