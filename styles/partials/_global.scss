@@ -1,16 +1,18 @@
 @import "./mixins";
 @import "./variables";
 
+
 //Header
 header{
     background-color: $bandSite-black;
-    height: 13vh;
+    height: 10vh;
+    
     
     @include tablet{
-      height: 10vh;
+      height: 8vh;
     }
     @include desktop{
-       
+       //height: 8vh;
     }
     
     
@@ -103,7 +105,7 @@ header{
             font-family: Avenir-regular;
             border-bottom: $white solid;
             border-width: 0.3125rem;
-            padding-bottom: 15.52px;
+            padding-bottom: 15.55px;
             padding-left: 3.125rem;
             padding-right: 2.5rem;
             &:hover{
@@ -112,13 +114,13 @@ header{
                 
             }
             @include tablet{
-                padding: 1.5rem 0;
+                padding: 1.6rem 0;
                 border-width: 0.29rem;
                 font-size: 1.2rem;
                 
             }
             @include desktop{
-                padding: 1.9rem 0;
+                padding: 1.7rem 0;
                 border-width: 0.29rem;
                 font-size: 1.0rem;
             }
@@ -134,6 +136,9 @@ header{
     }
 
     //Footer
+    footer{
+        //overflow-x: hidden;
+    }
 
     .container{
         background-color: $bandSite-black;
@@ -142,28 +147,66 @@ header{
         padding: 0.5rem 1rem;
         margin-top: 0;
 
+       
+        
         &-block{
+
+            @include tablet{
+            display: flex;
+           
+            }
             &__top{
+
+                @include tablet{
+                    display: flex;
+                    width: 80%;
+                }
                 h3{
                     font-size: 30px;
                     margin-bottom: 25px;
+
+                    @include tablet{
+                        font-size: 40px;
+                       
+                        width: 30%;
+                    }
                 }
             
         }
+        &__bottom{
+           @include tablet{
+            width: 80%;
+           }
+        }
         &__img{
             width: 30px;
-            //padding: 0 15px;
+            
+            @include tablet{
+                padding-top: 1rem;
+            }
             margin: 0px 45px 10px 1px;
             &--facebook{
                 width: 18px;
                 margin: 0 45px 10px 1px;
+
+                @include tablet {
+                    padding-top: 1rem;
+                }
             }
         }
         &__item{
 
+            @include tablet{
+                margin-top: 35px;
+            }
+
             margin-top: 20px;
             h4, p{
                 margin: 5px;
+               
+                @include tablet{
+                    font-size: 18px;
+                }
                
         }
         
@@ -172,7 +215,15 @@ header{
         background-color: $bandSite-darkBlack;
         width: 150px;
         margin-top: 110px;
-      
+
+        @include tablet{
+            width: 160px;
+           position: absolute;
+           bottom: -2202px;
+           left: 900px;
+        }
 }
-            
+        &__foot{
+            margin-top: 85px;
+        }
     }

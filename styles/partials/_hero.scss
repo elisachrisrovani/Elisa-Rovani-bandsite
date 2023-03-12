@@ -2,6 +2,8 @@
 @import './global';
 @import './variables';
 
+
+
 .hero{
     position: relative;
     width: 100%;
@@ -12,11 +14,16 @@
     height: 50vh;
     min-width: auto;
     background-size:cover;
-
+   // overflow-x: hidden;
+   
+    
     @include tablet{
         height: 80vh;
         width: 100vw;
         
+    }
+    @include desktop{
+       //overflow-x: hidden;
     }
     
    
