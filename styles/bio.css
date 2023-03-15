@@ -228,6 +228,7 @@ footer {
     font-size: 18px;
   }
 }
+
 @font-face {
   font-family: Avenir-regular;
   src: url(/assets/fonts/AvenirNextLTPro-Regular.otf);
@@ -458,6 +459,7 @@ footer {
     font-size: 18px;
   }
 }
+
 @font-face {
   font-family: Avenir-regular;
   src: url(/assets/fonts/AvenirNextLTPro-Regular.otf);
@@ -487,7 +489,7 @@ footer {
 @media (min-width: 768px) {
   .hero {
     height: 80vh;
-    width: 100vw;
+    width: 100%;
   }
 }
 .hero::before {
@@ -598,8 +600,7 @@ footer {
   .biography__text {
     font-size: 22px;
     line-height: 36px;
-    width: 655px;
-    margin-left: 250px;
+    padding: 0 10rem;
   }
 }
 .biography__text__signature {
@@ -618,7 +619,7 @@ footer {
 @media (min-width: 1280px) {
   .biography__text__signature {
     font-size: 16px;
-    padding-left: 20rem;
+    padding-left: 10rem;
   }
 }
 .biography__image {

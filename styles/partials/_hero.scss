@@ -19,11 +19,8 @@
     
     @include tablet{
         height: 80vh;
-        width: 100vw;
+        width: 100%;
         
-    }
-    @include desktop{
-       //overflow-x: hidden;
     }
     
    

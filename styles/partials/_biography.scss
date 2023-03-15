@@ -53,8 +53,9 @@
         @include desktop{
             font-size: 22px;
             line-height: 36px;
-            width: 655px;
-            margin-left: 250px;
+            padding: 0 10rem;
+           // width: 80%;
+           
         }
         &__signature{
             font-family: Avenir-regular;
@@ -70,8 +71,7 @@
 
             @include desktop{
                 font-size: 16px;
-               
-                padding-left:20rem;
+                padding-left:10rem;
             }
         }
     }
