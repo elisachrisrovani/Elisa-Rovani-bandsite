@@ -2,9 +2,12 @@
 @import './variables';
 
 .gallery{
+    background-color: $alabaster;
+    
     h2{
         font-family: Avenir-demi;
-        padding: 0 1rem;
+        padding: 1rem 1rem;
+        margin: 0;
 
         @include tablet{
             font-size: 2.25rem;
@@ -13,13 +16,14 @@
         }
         @include desktop{
             font-size: 2.25rem;
-            padding-left: 11rem;
+            padding-left: 12.1rem;
             margin-top: 1.875rem;
         }
     }
 }
 
 .photo-gallery{
+    
     
     @include tablet{
 
@@ -35,7 +39,7 @@
 
         @include desktop{
             margin-left: 9.375rem;
-            margin-bottom: 1.25rem;
+            //margin-bottom: 1.25rem;
         }
       
         img{

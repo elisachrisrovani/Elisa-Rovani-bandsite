@@ -36,16 +36,21 @@ header{
            img{
             width: 9.375rem;
             background-color: $bandSite-darkBlack;
+
+           
               
             @include tablet{
                 width: 9.375rem;
                 margin-top: 0.625rem;
+                &:hover{
+                    width: 9.8rem;
+                }
                 
             }
             @include desktop{
-                width: 7.5rem;
-                margin-top: 0.625rem;
                 
+                margin-top: 0.625rem;
+               
             }
            }
                         
@@ -80,8 +85,8 @@ header{
             text-align: left;
             width: 50%;
             &:hover{
-                    border-bottom: 0.2rem $white solid;
-                    padding-bottom: 1.9rem;
+                    border-bottom: 0.3rem $white solid;
+                    padding-bottom: 1.7rem;
                     
                 }
             @include tablet{
@@ -109,6 +114,7 @@ header{
             &:hover{
                 border-bottom: 0.2rem $white solid;
                 padding-bottom: 1.9rem;
+                font-weight: 700;
                 
             }
             @include tablet{
@@ -144,6 +150,7 @@ header{
     .container{
        padding: 0.5rem 3rem;
        width: 80%;
+      
 
         @include tablet{
             padding: 0.5 rem 0rem;
@@ -160,7 +167,18 @@ header{
             display: flex;
             margin-bottom: 0;
             
-           
+            
+            }
+            &__contact{
+                a{
+                 text-decoration: none;
+                 color: $white;
+
+                 &:hover{
+                    opacity: 50%;
+                 }
+                }
+                
             }
             &__top{
 
@@ -173,27 +191,34 @@ header{
                 &__logo{
                   
                   img{  background-color: $bandSite-darkBlack;
-                    width: 9.375rem;
+                    width: 9.4rem;
                     margin-top: 6.875rem;
+
+                    &:hover{
+                        width: 9.8rem;
+                    }
             
                     @include tablet{
-                    // width: 10rem;
-                    // position: relative;
-                    // bottom: 18.125rem;
-                    // left: 50.625rem;
                     visibility: hidden;
                     margin: 0;    
                                       
                     }
 
-                    // @include desktop{
-                    // left: 58.75rem;
-                    // }
+                    
                 }
             }
                 h3{
                     font-size: 1.875rem;
                     margin-bottom: 1.5625rem;
+                    margin-top: 2rem;
+                    a{
+                        text-decoration: none;
+                        color: $white;
+
+                        &:hover{
+                            text-shadow: 1.5px 1.5px 1.5px rgba($color: #f1ebeb, $alpha: 1.0);
+                        }
+                    }
 
                     @include tablet{
                         font-size: 2.1875rem;
@@ -203,13 +228,18 @@ header{
                     @include desktop{
                         font-size: 2.1875rem;
                         width: 30%;
-                        //margin-right: 0.3125rem;
+                       
                     }
                     
                 }
+
+                
             
         }
         &__bottom{
+
+            padding: 0.625rem 0;
+
            @include tablet{
             width: 40%;
            }
@@ -218,28 +248,46 @@ header{
             
            }
         }
+        
+        
         &__img{
-            width: 1.875rem;
             
+            width: 2.1rem;
+            margin: 0rem 2.8rem 1.5rem 0.25rem;
+            &:hover{
+               opacity: 50%;
+            }
             @include tablet{
-                padding-top: 1rem;
-                margin: 0rem 2.8125rem 0.625rem 0.25rem;
+                padding-top: .5rem;
+                margin: 2rem 2.8rem 0.625rem 0.25rem;
             }
             @include desktop{
-               width: 1.5625rem;
+               width: 2rem;
                //margin: 0rem 1.5625rem 0.625rem 0.25rem;
             }
             
             &--facebook{
-                width: 1.125rem;
-                margin: 0 2.8125rem 0.625rem 0.0625rem;
+                width: 1.2rem;
+                margin: 0rem 2.8rem 1.5rem 0.25rem;
+                &:hover{
+                    opacity: 50%;
+                 }
 
                 @include tablet {
-                    padding-top: 1rem;
+                    padding-top: 2.5rem;
                 }
-                
-                
             }
+            &--twitter{
+                width: 2.3rem;
+                margin: 0rem 2.8rem 1.5rem 0.25rem;
+                &:hover{
+                    opacity: 50%;
+                 }
+                @include tablet {
+                    padding-top: 2.5rem;
+                }
+            }
+
             &--logo{
                 visibility: hidden;
 
@@ -249,6 +297,9 @@ header{
                     height: 5vh;
                     background-color: $bandSite-darkBlack;
                     margin: 2.5rem 0 0 9.6875rem;
+                    &:hover{
+                        width: 9.8rem;
+                    }
                 }
                 @include tablet{
                    
@@ -257,7 +308,8 @@ header{
             }
         }
         &__item{
-
+            
+            padding: 0.5rem 0rem;
             @include tablet{
                 margin-top: 2.1875rem;
             }
@@ -265,6 +317,7 @@ header{
          
             h4, p{
                 margin: 0.3125rem;
+                
                
                 @include tablet{
                     font-size: 0.9375rem;
@@ -275,6 +328,8 @@ header{
                     margin-right: 0;
                     
                 }
+
+               
         }
         
     }
