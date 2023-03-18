@@ -2,76 +2,101 @@
 @import './variables';
 
 
-.biography{
-
-    padding: 1.5rem 1rem 1rem 1rem;
-    display: grid;
-
-    @include desktop{
-        width: 800px;
-        padding: 8px 180px;
-    }
-   
+.title{
     
-    &__title{
         font-size: 2rem;
         font-family: Avenir-demi;
-        padding: 0 1rem;
-        margin: 2px 0 15px;
+        padding: 1rem 1rem 0rem 1rem;
+        margin: 0.125rem 0 0.9375rem;
         text-align: left;
-
+    
         @include tablet{
             font-size: 3rem;
-            margin: 25px 0;
+            margin: 1.5625rem 0;
             
         }
         @include desktop{
            font-size: 2rem;
-           padding-left: 190px;
-           
+           padding-left: 18.75rem;
         }
+}
+.biography{
+    width: 100%;
+    padding: 1.5rem 1rem 1rem 1rem;
+    display: grid;
+
+    @include tablet{
+      width: 80%;
+      height: 95%;
+      margin: auto;
     }
+    @include desktop{
+       width: 60%;
+      
+      
+    }
+}
+.biography-container{
+
+    padding: 1.5rem 1rem 1rem 1rem;
     
 
+    @include tablet{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       
+       
+        
+    }
+   
+    @include desktop{
+      padding: 0 2rem;
+    }
+   
+    
     &__text{
         font-family: Avenir-regular;
-        font-size: 19px;
-        line-height: 28px;
-        padding: 0 1rem;
-        margin: 10px 0;
+        font-size: 1.1875rem;
+        line-height: 1.75rem;
+        margin: 0.625rem 0;
+       
         
        
         @include tablet{
             font-family: Avenir-demi;
-            width: 750px;
-            font-size: 28px;
-            line-height: 40px;
-            padding: 0 4rem;
-            margin: auto;
+            margin: 0;
+            font-size: 1.75rem;
+            line-height: 2.5rem;
+            align-items: left;
+            
+           
+           
         }
 
         @include desktop{
-            font-size: 22px;
-            line-height: 36px;
-            padding: 0 10rem;
-           // width: 80%;
+            font-size: 1.375rem;
+            line-height: 2.25rem;
+            width: 70%;
+        
+          
+          
            
         }
         &__signature{
             font-family: Avenir-regular;
-            font-size: 19px;
-            padding: 0 1rem;
+            font-size: 1.1875rem;
             margin-top: 0;
 
             @include tablet{
-               padding: 0 12rem;
-               margin-top: 10px;
-               width: 50%;
+               margin-top: 0.625rem;
+              
+               
             }
 
             @include desktop{
-                font-size: 16px;
-                padding-left:10rem;
+                font-size: 1rem;
+                
             }
         }
     }
@@ -89,7 +114,7 @@
             @include tablet{
              height: 65vh;
              width: 45rem;
-             margin-bottom: 10px;
+             margin-bottom: 0.625rem;
             }
      
             @include desktop{
@@ -109,17 +134,18 @@ article{
 .band-history{
     padding: 0 1rem;
     display: grid;
-    //width: 800px;
+   
 
     @include tablet{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         padding: 0 5rem;
+        width: 90%;
        
     }
     @include desktop{
-        width: 50%;
+        width: 60%;
         margin: auto;
     }
     &__title{
@@ -130,14 +156,15 @@ article{
             padding: 0 1rem;
     
             @include tablet{
-                font-size: 36px;
-                width: 85%;
+                font-size: 2.25rem;
+              //  width: 85%;
+                padding: 0 7rem;
             }
     
             @include desktop{
-                font-size: 24px;
+                font-size: 1.5rem;
                 padding: 0 23rem;
-                margin-bottom: 10px;
+                margin-bottom: 0.625rem;
                 width: 50%;
                 
             }
@@ -145,24 +172,25 @@ article{
     }
     &__text{
         font-family: Avenir-regular;
-        font-size: 14px;
-        line-height: 22px;
+        font-size: 0.875rem;
+        line-height: 1.375rem;
+       
 
         @include tablet{
-            font-size: 17px;
-            line-height: 28px;
+            font-size: 1.0625rem;
+            line-height: 1.75rem;
             align-items: left;
-            width: 50%;
-            margin-right: 25px;
+            width: 40%;
+            
            
         }
         @include desktop{
-            font-size: 15px;
-            line-height: 24px;
+            font-size: 0.9375rem;
+            line-height: 1.5rem;
             align-items: left;
             width: 50%;
-            margin-right: 19px;
-           margin-bottom: 20px;
+            margin-right: 1.1875rem;
+           margin-bottom: 1.25rem;
         }
     }
 }

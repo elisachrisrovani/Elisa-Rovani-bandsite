@@ -4,7 +4,7 @@
 .gallery{
     h2{
         font-family: Avenir-demi;
-        padding: 0 16px;
+        padding: 0 1rem;
 
         @include tablet{
             font-size: 2.25rem;
@@ -21,9 +21,17 @@
 
 .photo-gallery{
     
-    
+    @include tablet{
+
+        padding: 0 0.625rem;
+
+    }
     &__block{
-        padding: 0 16px;
+        padding: 0 1rem;
+
+        @include tablet{
+            padding: 0 1.25rem;
+        }
 
         @include desktop{
             margin-left: 9.375rem;
@@ -38,15 +46,16 @@
       
        @include tablet{
         width: 30%;
-        height: 11.25rem;
-        padding: 16px 16px 24px 16px;
+        height: 9rem;
+        padding: 0 0.625rem;
        }
 
        @include desktop{
-        width: 25%;
+       
+       
         height: 14.375rem;
-        padding: 8px 8px 0 16px;
-        //margin-left: 3.125rem;
+        padding: 0.5rem 0.5rem 0 1rem;
+        
        }
         }
     }

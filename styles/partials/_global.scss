@@ -5,11 +5,11 @@
 //Header
 header{
     background-color: $bandSite-black;
-    height: 10vh;
+    height: 13vh;
     
     
     @include tablet{
-      height: 8vh;
+      height: 10vh;
     }
     @include desktop{
        //height: 8vh;
@@ -25,8 +25,8 @@ header{
     @include tablet{
       flex-direction: row;
         justify-content: left;
-        width: 500px;
-        margin-top: 10px;
+        width: 31.25rem;
+        margin-top: 0.625rem;
     }
 
     
@@ -34,17 +34,17 @@ header{
             
             margin: auto;
            img{
-            width: 150px;
+            width: 9.375rem;
             background-color: $bandSite-darkBlack;
               
             @include tablet{
-                width: 150px;
-                margin-top: 10px;
+                width: 9.375rem;
+                margin-top: 0.625rem;
                 
             }
             @include desktop{
-                width: 120px;
-                margin-top: 10px;
+                width: 7.5rem;
+                margin-top: 0.625rem;
                 
             }
            }
@@ -57,20 +57,18 @@ header{
 .nav-bar{
    
     
+    
     &__nav-list{
         display: flex;
         justify-content: space-around;
         margin-bottom: 0;
+        list-style-type: none;
         
     }
     &__nav-item{
 
        width: 50%;
-    
-       
-        li{
-            list-style-type: none;
-        }
+           
         &__title{
             font-size:1.25rem;
             font-weight:400;
@@ -91,7 +89,7 @@ header{
 
             }
             @include desktop{
-                font-size: 1.0rem;
+                font-size: 1rem;
 
             }
 
@@ -105,7 +103,7 @@ header{
             font-family: Avenir-regular;
             border-bottom: $white solid;
             border-width: 0.3125rem;
-            padding-bottom: 15.55px;
+            padding-bottom: 0.9719rem;
             padding-left: 3.125rem;
             padding-right: 2.5rem;
             &:hover{
@@ -122,7 +120,7 @@ header{
             @include desktop{
                 padding: 1.7rem 0;
                 border-width: 0.29rem;
-                font-size: 1.0rem;
+                font-size: 1rem;
             }
              
             }
@@ -140,7 +138,6 @@ header{
         background-color: $bandSite-black;
         font-family: Avenir-regular;
         color: $white;
-        //padding: 0.5rem 1rem;
         margin-top: 0;
     }
 
@@ -149,13 +146,12 @@ header{
        width: 80%;
 
         @include tablet{
-            padding: 0.5 rem 5rem;
-            width: 100%;
+            padding: 0.5 rem 0rem;
+            width: 90%;
         }
         @include desktop{
-            //padding: 0.5 rem 35rem;
-            width: 60%;
-            margin-left: 150px;
+            width: 100%;
+            margin-left: 9.375rem;
         }
         
         &-block{
@@ -177,29 +173,37 @@ header{
                 &__logo{
                   
                   img{  background-color: $bandSite-darkBlack;
-                    width: 150px;
-                    //margin-top: 110px;
+                    width: 9.375rem;
+                    margin-top: 6.875rem;
             
                     @include tablet{
-                    width: 160px;
-                    position: relative;
-                    bottom: 290px;
-                    left: 810px;
+                    // width: 10rem;
+                    // position: relative;
+                    // bottom: 18.125rem;
+                    // left: 50.625rem;
+                    visibility: hidden;
+                    margin: 0;    
                                       
                     }
 
-                    @include desktop{
-                    left: 940px;
-                    }
+                    // @include desktop{
+                    // left: 58.75rem;
+                    // }
                 }
             }
                 h3{
-                    font-size: 30px;
-                    margin-bottom: 25px;
+                    font-size: 1.875rem;
+                    margin-bottom: 1.5625rem;
 
                     @include tablet{
-                        font-size: 40px;
+                        font-size: 2.1875rem;
                         width: 30%;
+                        margin-right: 0.3125rem;
+                    }
+                    @include desktop{
+                        font-size: 2.1875rem;
+                        width: 30%;
+                        //margin-right: 0.3125rem;
                     }
                     
                 }
@@ -207,41 +211,79 @@ header{
         }
         &__bottom{
            @include tablet{
-            width: 80%;
+            width: 40%;
+           }
+           @include desktop{
+            width: 18%;
+            
            }
         }
         &__img{
-            width: 30px;
+            width: 1.875rem;
             
             @include tablet{
                 padding-top: 1rem;
+                margin: 0rem 2.8125rem 0.625rem 0.25rem;
             }
-            margin: 0px 45px 10px 1px;
+            @include desktop{
+               width: 1.5625rem;
+               //margin: 0rem 1.5625rem 0.625rem 0.25rem;
+            }
+            
             &--facebook{
-                width: 18px;
-                margin: 0 45px 10px 1px;
+                width: 1.125rem;
+                margin: 0 2.8125rem 0.625rem 0.0625rem;
 
                 @include tablet {
                     padding-top: 1rem;
+                }
+                
+                
+            }
+            &--logo{
+                visibility: hidden;
+
+                @include tablet{
+                    visibility: visible;
+                    width: 9.375rem;
+                    height: 5vh;
+                    background-color: $bandSite-darkBlack;
+                    margin: 2.5rem 0 0 9.6875rem;
+                }
+                @include tablet{
+                   
+                    margin: 2.5rem 0rem 0 6.25rem;
                 }
             }
         }
         &__item{
 
             @include tablet{
-                margin-top: 35px;
+                margin-top: 2.1875rem;
             }
 
-            margin-top: 20px;
+         
             h4, p{
-                margin: 5px;
+                margin: 0.3125rem;
                
                 @include tablet{
-                    font-size: 18px;
+                    font-size: 0.9375rem;
                 }
                
+                @include desktop{
+                    margin-bottom: 0;
+                    margin-right: 0;
+                    
+                }
         }
         
     }
 }      
+        &__foot{
+
+            @include tablet{
+                margin-top: 0.625rem;
+            }
+            
+        }
     }

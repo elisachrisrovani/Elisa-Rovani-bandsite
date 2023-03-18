@@ -14,7 +14,7 @@
     height: 50vh;
     min-width: auto;
     background-size:cover;
-   // overflow-x: hidden;
+   
    
     
     @include tablet{
@@ -37,8 +37,8 @@
     
 
     &__title{
-        font-size: 32px;
-        line-height: 32px;
+        font-size: 2rem;
+        line-height: 2rem;
         color:$white;
         position: relative;
         font-family: Avenir-regular;
@@ -46,8 +46,9 @@
         right: 40%;
        
         @include tablet{
-            font-size: 60px;
+            font-size: 3.75rem;
             position: absolute;
+            width: 100%;
             left: 5%;
             top: 35%;
             font-family: Avenir-demi;
