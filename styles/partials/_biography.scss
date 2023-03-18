@@ -78,6 +78,7 @@
             font-size: 1.375rem;
             line-height: 2.25rem;
             width: 70%;
+            margin-left: 2.5rem;
         
           
           
@@ -96,7 +97,7 @@
 
             @include desktop{
                 font-size: 1rem;
-                
+                margin-left: 2.5rem;
             }
         }
     }
@@ -112,7 +113,7 @@
             margin: auto;
      
             @include tablet{
-             height: 65vh;
+             height: 45vh;
              width: 45rem;
              margin-bottom: 0.625rem;
             }
@@ -128,6 +129,11 @@ article{
     padding: 1.5rem 1rem 0 1rem;
     display: grid;
 
+    @include desktop{
+        width: 80%;
+        margin-left: 9.375rem;
+        padding: 0;
+    }
     
     
 }
@@ -157,15 +163,14 @@ article{
     
             @include tablet{
                 font-size: 2.25rem;
-              //  width: 85%;
                 padding: 0 7rem;
             }
     
             @include desktop{
                 font-size: 1.5rem;
-                padding: 0 23rem;
+                margin-left: 10rem;
                 margin-bottom: 0.625rem;
-                width: 50%;
+               
                 
             }
         }

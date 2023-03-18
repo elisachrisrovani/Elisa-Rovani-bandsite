@@ -22,6 +22,7 @@ header {
     height: 10vh;
   }
 }
+
 .header-top {
   display: flex;
   flex-direction: column;
@@ -73,7 +74,7 @@ header {
   color: #FFFFFF;
   text-decoration: none;
   font-family: Avenir-regular;
-  padding: 0 1.875rem 1.125rem 1.25rem;
+  padding: 0rem 1.875rem 1.125rem 1.25rem;
   text-align: left;
   width: 50%;
 }
@@ -100,9 +101,7 @@ header {
   font-family: Avenir-regular;
   border-bottom: #FFFFFF solid;
   border-width: 0.3125rem;
-  padding-bottom: 0.9719rem;
-  padding-left: 3.125rem;
-  padding-right: 2.5rem;
+  padding: 0rem 2.5rem 0.98rem 3.125rem;
 }
 .nav-bar__nav-item__title--highlighted:hover {
   border-bottom: 0.2rem #FFFFFF solid;
@@ -136,18 +135,15 @@ footer {
 
 .container {
   padding: 0.5rem 3rem;
-  width: 80%;
 }
 @media (min-width: 768px) {
   .container {
     padding: 0.5 rem 0rem;
-    width: 90%;
   }
 }
 @media (min-width: 1280px) {
   .container {
-    width: 100%;
-    margin-left: 9.375rem;
+    margin-left: 5.94rem;
   }
 }
 @media (min-width: 768px) {
@@ -281,7 +277,12 @@ footer {
 }
 @media (min-width: 768px) {
   .container-block__img--logo {
-    margin: 2.5rem 0rem 0 6.25rem;
+    margin: 2.5rem 0rem 0 10.25rem;
+  }
+}
+@media (min-width: 1280px) {
+  .container-block__img--logo {
+    margin: 2.5rem 0rem 0 20.25rem;
   }
 }
 .container-block__item {
@@ -336,6 +337,7 @@ header {
     height: 10vh;
   }
 }
+
 .header-top {
   display: flex;
   flex-direction: column;
@@ -387,7 +389,7 @@ header {
   color: #FFFFFF;
   text-decoration: none;
   font-family: Avenir-regular;
-  padding: 0 1.875rem 1.125rem 1.25rem;
+  padding: 0rem 1.875rem 1.125rem 1.25rem;
   text-align: left;
   width: 50%;
 }
@@ -414,9 +416,7 @@ header {
   font-family: Avenir-regular;
   border-bottom: #FFFFFF solid;
   border-width: 0.3125rem;
-  padding-bottom: 0.9719rem;
-  padding-left: 3.125rem;
-  padding-right: 2.5rem;
+  padding: 0rem 2.5rem 0.98rem 3.125rem;
 }
 .nav-bar__nav-item__title--highlighted:hover {
   border-bottom: 0.2rem #FFFFFF solid;
@@ -450,18 +450,15 @@ footer {
 
 .container {
   padding: 0.5rem 3rem;
-  width: 80%;
 }
 @media (min-width: 768px) {
   .container {
     padding: 0.5 rem 0rem;
-    width: 90%;
   }
 }
 @media (min-width: 1280px) {
   .container {
-    width: 100%;
-    margin-left: 9.375rem;
+    margin-left: 5.94rem;
   }
 }
 @media (min-width: 768px) {
@@ -595,7 +592,12 @@ footer {
 }
 @media (min-width: 768px) {
   .container-block__img--logo {
-    margin: 2.5rem 0rem 0 6.25rem;
+    margin: 2.5rem 0rem 0 10.25rem;
+  }
+}
+@media (min-width: 1280px) {
+  .container-block__img--logo {
+    margin: 2.5rem 0rem 0 20.25rem;
   }
 }
 .container-block__item {
@@ -680,7 +682,7 @@ footer {
   .hero__title {
     font-size: 3.75rem;
     position: absolute;
-    width: 100%;
+    width: 80%;
     left: 5%;
     top: 35%;
     font-family: Avenir-demi;
@@ -790,6 +792,7 @@ footer {
     font-size: 1.375rem;
     line-height: 2.25rem;
     width: 70%;
+    margin-left: 2.5rem;
   }
 }
 .biography-container__text__signature {
@@ -805,6 +808,7 @@ footer {
 @media (min-width: 1280px) {
   .biography-container__text__signature {
     font-size: 1rem;
+    margin-left: 2.5rem;
   }
 }
 .biography-container__image {
@@ -819,7 +823,7 @@ footer {
 }
 @media (min-width: 768px) {
   .biography-container__image img {
-    height: 65vh;
+    height: 45vh;
     width: 45rem;
     margin-bottom: 0.625rem;
   }
@@ -834,6 +838,13 @@ footer {
 article {
   padding: 1.5rem 1rem 0 1rem;
   display: grid;
+}
+@media (min-width: 1280px) {
+  article {
+    width: 80%;
+    margin-left: 9.375rem;
+    padding: 0;
+  }
 }
 
 .band-history {
@@ -870,9 +881,8 @@ article {
 @media (min-width: 1280px) {
   .band-history__title h3 {
     font-size: 1.5rem;
-    padding: 0 23rem;
+    margin-left: 10rem;
     margin-bottom: 0.625rem;
-    width: 50%;
   }
 }
 .band-history__text {
@@ -932,7 +942,7 @@ article {
 @media (min-width: 1280px) {
   .gallery h2 {
     font-size: 2.25rem;
-    padding-left: 12.1rem;
+    padding-left: 7rem;
     margin-top: 1.875rem;
   }
 }
@@ -940,6 +950,11 @@ article {
 @media (min-width: 768px) {
   .photo-gallery {
     padding: 0 0.625rem;
+  }
+}
+@media (min-width: 1280px) {
+  .photo-gallery {
+    padding: 0 0.5rem;
   }
 }
 .photo-gallery__block {
@@ -952,7 +967,7 @@ article {
 }
 @media (min-width: 1280px) {
   .photo-gallery__block {
-    margin-left: 9.375rem;
+    margin-left: 4rem;
   }
 }
 .photo-gallery__block img {
@@ -963,17 +978,13 @@ article {
 @media (min-width: 768px) {
   .photo-gallery__block img {
     width: 30%;
-    height: 9rem;
-    padding: 0 0.625rem;
+    height: 20vh;
+    padding: 0 0.5rem;
   }
 }
 @media (min-width: 1280px) {
   .photo-gallery__block img {
-    height: 14.375rem;
+    height: 35vh;
     padding: 0.5rem 0.5rem 0 1rem;
   }
-}
-
-* {
-  margin: 0;
 }/*# sourceMappingURL=bio.css.map */

@@ -11,10 +11,7 @@ header{
     @include tablet{
       height: 10vh;
     }
-    @include desktop{
-       //height: 8vh;
-    }
-    
+   
     
 }
 .header-top{
@@ -81,7 +78,7 @@ header{
             color: $white;
             text-decoration: none;
             font-family: Avenir-regular;
-            padding: 0 1.875rem 1.125rem 1.25rem;
+            padding: 0rem 1.875rem 1.125rem 1.25rem;
             text-align: left;
             width: 50%;
             &:hover{
@@ -108,9 +105,8 @@ header{
             font-family: Avenir-regular;
             border-bottom: $white solid;
             border-width: 0.3125rem;
-            padding-bottom: 0.9719rem;
-            padding-left: 3.125rem;
-            padding-right: 2.5rem;
+            padding: 0rem 2.5rem 0.98rem 3.125rem;
+           
             &:hover{
                 border-bottom: 0.2rem $white solid;
                 padding-bottom: 1.9rem;
@@ -149,16 +145,16 @@ header{
 
     .container{
        padding: 0.5rem 3rem;
-       width: 80%;
+       
       
 
         @include tablet{
             padding: 0.5 rem 0rem;
-            width: 90%;
+           
         }
         @include desktop{
-            width: 100%;
-            margin-left: 9.375rem;
+         
+            margin-left: 5.94rem;
         }
         
         &-block{
@@ -303,7 +299,11 @@ header{
                 }
                 @include tablet{
                    
-                    margin: 2.5rem 0rem 0 6.25rem;
+                    margin: 2.5rem 0rem 0 10.25rem;
+                }
+                @include desktop{
+                   
+                    margin: 2.5rem 0rem 0 20.25rem;
                 }
             }
         }
