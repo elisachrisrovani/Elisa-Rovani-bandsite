@@ -975,6 +975,9 @@ article {
   height: 30vh;
   margin-bottom: 0.9375rem;
 }
+.photo-gallery__block img:hover {
+  opacity: 90%;
+}
 @media (min-width: 768px) {
   .photo-gallery__block img {
     width: 30%;
