@@ -14,7 +14,7 @@
     height: 50vh;
     min-width: auto;
     background-size:cover;
-   
+    margin-bottom: 0;
    
     
     @include tablet{
@@ -22,6 +22,7 @@
         width: 100%;
         
     }
+    
     
    
     &::before{
@@ -53,6 +54,13 @@
             top: 5%;
             font-family: Avenir-demi;
         }
+        @include desktop{
+            font-size: 2.3rem;
+            position: absolute;
+            left: 10%;
+            top: 25%;
+            font-family: Avenir-regular;
+        }
     }
     &--music{
         font-size: 2.5rem;
@@ -66,6 +74,14 @@
         @include tablet{
             font-size: 4.3rem;
             width: 60%;
+        }
+
+        @include desktop{
+            font-size: 4.3rem;
+            width: 55%;
+            bottom: 0.3rem;
+            left: -265px;
+
         }
     }
 }

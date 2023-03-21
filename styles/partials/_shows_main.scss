@@ -4,6 +4,10 @@
 
 
 .shows{
+
+    @include desktop{
+        margin-top: 0;
+    }
    
     h1{
         font-family:Avenir-demi;
@@ -16,9 +20,19 @@
             padding-left: 36px;
             
         }
+        @include desktop{
+            position: relative;
+            top: 75px;
+        }
     }
    
     &-container{
+
+        @include desktop{
+            width: 55%;
+            margin-left: 550px;
+
+        }
        
         hr{
             border: none;

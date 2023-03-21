@@ -1332,6 +1332,7 @@ footer {
   height: 50vh;
   min-width: auto;
   background-size: cover;
+  margin-bottom: 0;
 }
 @media (min-width: 768px) {
   .hero-shows {
@@ -1365,6 +1366,15 @@ footer {
     font-family: Avenir-demi;
   }
 }
+@media (min-width: 1280px) {
+  .hero-shows__title--album {
+    font-size: 2.3rem;
+    position: absolute;
+    left: 10%;
+    top: 25%;
+    font-family: Avenir-regular;
+  }
+}
 .hero-shows__title--music {
   font-size: 2.5rem;
   color: #FFFFFF;
@@ -1378,6 +1388,14 @@ footer {
   .hero-shows__title--music {
     font-size: 4.3rem;
     width: 60%;
+  }
+}
+@media (min-width: 1280px) {
+  .hero-shows__title--music {
+    font-size: 4.3rem;
+    width: 55%;
+    bottom: 0.3rem;
+    left: -265px;
   }
 }
 
@@ -1711,6 +1729,11 @@ footer {
   src: url(/assets/fonts/AvenirNextLTPro-Bold.otf);
   font-weight: 700;
 }
+@media (min-width: 1280px) {
+  .shows {
+    margin-top: 0;
+  }
+}
 .shows h1 {
   font-family: Avenir-demi;
   font-size: 2.3rem;
@@ -1721,6 +1744,18 @@ footer {
   .shows h1 {
     font-size: 3rem;
     padding-left: 36px;
+  }
+}
+@media (min-width: 1280px) {
+  .shows h1 {
+    position: relative;
+    top: 75px;
+  }
+}
+@media (min-width: 1280px) {
+  .shows-container {
+    width: 55%;
+    margin-left: 550px;
   }
 }
 .shows-container hr {
