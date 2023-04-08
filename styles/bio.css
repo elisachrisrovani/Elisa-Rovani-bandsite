@@ -1729,6 +1729,10 @@ footer {
   src: url(/assets/fonts/AvenirNextLTPro-Bold.otf);
   font-weight: 700;
 }
+.shows {
+  list-style-type: none;
+  margin-top: 0;
+}
 @media (min-width: 1280px) {
   .shows {
     margin-top: 0;
@@ -1752,139 +1756,95 @@ footer {
     top: 75px;
   }
 }
+.shows-container li {
+  height: 415px;
+}
+@media (min-width: 768px) {
+  .shows-container li {
+    display: flex;
+    flex-direction: row;
+    height: 800px;
+    width: 80%;
+  }
+}
 @media (min-width: 1280px) {
   .shows-container {
     width: 55%;
     margin-left: 550px;
   }
 }
+.shows-container__top {
+  height: 10px;
+}
+@media (min-width: 768px) {
+  .shows-container__top {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.shows-container__top__header {
+  visibility: hidden;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+@media (min-width: 768px) {
+  .shows-container__top__header {
+    visibility: visible;
+    color: #AFAFAF;
+    font-family: Avenir-regular;
+    font-size: 0.9rem;
+    padding: 2rem 14rem 1rem 3rem;
+    margin-top: 0;
+    list-style-type: none;
+  }
+}
 .shows-container hr {
   border: none;
   background-color: #E1E1E1;
   height: 2px;
-  margin: 30px 0 20px 0;
+  margin: 40px 0 20px 0;
   width: 100%;
-}
-@media (min-width: 768px) {
-  .shows-container hr {
-    margin: 0;
-  }
 }
 .shows-container__block {
   padding: 0;
   margin: 0;
+  height: 10%;
 }
 @media (min-width: 768px) {
   .shows-container__block {
     display: flex;
-    flex-direction: row;
-    height: 80px;
-    padding-top: 1rem;
+    flex-direction: column;
+    height: 800px;
+    padding-top: 2rem;
+    margin: 2rem;
+    width: 80%;
   }
 }
 .shows-container__block__text {
   color: #323232;
   font-family: Avenir-regular;
-  padding: 0.2rem 0 1rem 1rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
   line-height: 1rem;
-}
-.shows-container__block__text__one {
-  color: #323232;
-  font-family: Avenir-regular;
-  padding: 0.2rem 0 1rem 1rem;
-  font-size: 1rem;
-  line-height: 1rem;
-}
-@media (min-width: 768px) {
-  .shows-container__block__text__one {
-    font-size: 1.1rem;
-    padding: 0rem 4rem 0 6rem;
-  }
-}
-.shows-container__block__text__two {
-  color: #323232;
-  font-family: Avenir-regular;
-  padding: 0.2rem 0 1rem 1rem;
-  font-size: 1rem;
-  line-height: 1rem;
-}
-@media (min-width: 768px) {
-  .shows-container__block__text__two {
-    font-size: 1.1rem;
-    padding: 0rem 5rem 0 6.5rem;
-  }
-}
-.shows-container__block__text__three {
-  color: #323232;
-  font-family: Avenir-regular;
-  padding: 0.2rem 0 1rem 1rem;
-  font-size: 1rem;
-  line-height: 1rem;
-}
-@media (min-width: 768px) {
-  .shows-container__block__text__three {
-    font-size: 1.1rem;
-    padding: 0rem 3.8rem 0 7.3rem;
-  }
-}
-.shows-container__block__text__four {
-  color: #323232;
-  font-family: Avenir-regular;
-  padding: 0.2rem 0 1rem 1rem;
-  font-size: 1rem;
-  line-height: 1rem;
-}
-@media (min-width: 768px) {
-  .shows-container__block__text__four {
-    font-size: 1.1rem;
-    padding: 0rem 3.2rem 0 7rem;
-  }
-}
-.shows-container__block__text__five {
-  color: #323232;
-  font-family: Avenir-regular;
-  padding: 0.2rem 0 1rem 1rem;
-  font-size: 1rem;
-  line-height: 1rem;
-}
-@media (min-width: 768px) {
-  .shows-container__block__text__five {
-    font-size: 1.1rem;
-    padding: 0rem 2.5rem 0 7.1rem;
-  }
-}
-.shows-container__block__text__six {
-  color: #323232;
-  font-family: Avenir-regular;
-  padding: 0.2rem 0 1rem 1rem;
-  font-size: 1rem;
-  line-height: 1rem;
-}
-@media (min-width: 768px) {
-  .shows-container__block__text__six {
-    font-size: 1.1rem;
-    padding: 0rem 5rem 0 6rem;
-  }
 }
 .shows-container__block__text--highlighted {
   color: #323232;
   font-family: Avenir-demi;
   padding: 0.2rem 0 1rem 1rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
   line-height: 1rem;
 }
 @media (min-width: 768px) {
   .shows-container__block__text--highlighted {
     font-size: 1.1rem;
-    padding: 0rem 0 0 0rem;
+    padding: 1rem;
   }
 }
 .shows-container__block__text__end {
   color: #323232;
   font-family: Avenir-regular;
   padding: 0.2rem 0 1rem 1rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
   line-height: 1rem;
 }
 @media (min-width: 768px) {
@@ -1895,11 +1855,11 @@ footer {
   }
 }
 .shows-container__block__btn {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   text-align: center;
   align-items: center;
   padding: 1rem 10.9rem;
-  margin: 10rem 2rem;
+  margin: 20rem 2rem;
   border-radius: 5px;
   background-color: #323232;
   text-decoration: none;
@@ -1914,30 +1874,62 @@ footer {
     padding: 1rem 2rem 2rem 2rem;
   }
 }
-.shows-container__block__header {
-  visibility: hidden;
-  padding: 0;
-  margin: 0;
-}
-@media (min-width: 768px) {
-  .shows-container__block__header {
-    visibility: visible;
-    color: #AFAFAF;
-    font-family: Avenir-regular;
-    font-size: 0.9rem;
-    padding: 2rem 14rem 1rem 3rem;
-    margin-top: 0;
-  }
-}
 .shows-container__block__header--hidden {
   color: #AFAFAF;
   font-family: Avenir-regular;
-  font-size: 0.8rem;
-  padding: 1rem 0 0 1rem;
+  font-size: 1.3rem;
+  padding: 0 0 0 1rem;
   margin-top: 0;
+  border: none;
 }
 @media (min-width: 768px) {
   .shows-container__block__header--hidden {
     visibility: hidden;
   }
+}
+
+@font-face {
+  font-family: Avenir-regular;
+  src: url(/assets/fonts/AvenirNextLTPro-Regular.otf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: Avenir-demi;
+  src: url(/assets/fonts/AvenirNextLTPro-Demi.otf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: Avenir-bold;
+  src: url(/assets/fonts/AvenirNextLTPro-Bold.otf);
+  font-weight: 700;
+}
+.message h1 {
+  font-family: Avenir-demi;
+  font-size: 3rem;
+}
+.message-container__top {
+  display: flex;
+}
+.message-container__top img {
+  max-width: 70px;
+  height: 65px;
+  border-radius: 80%;
+  margin-left: 20px;
+}
+.message-container__top p {
+  position: relative;
+  left: 50px;
+  top: -25px;
+  color: #AFAFAF;
+  font-size: 1rem;
+  font-family: Avenir-regular;
+}
+.message-container__top input {
+  padding: 15px 120px;
+  margin: 15px 0px;
+  box-sizing: border-box;
+  border: 3px solid #E1E1E1;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  font-family: Avenir-regular;
 }/*# sourceMappingURL=bio.css.map */

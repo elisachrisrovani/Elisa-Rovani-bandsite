@@ -1,0 +1,44 @@
+@import './variables';
+
+.message{
+    h1{
+        font-family: Avenir-demi;
+        font-size: 3rem;
+    }
+    &-container{
+
+       
+        &__top{
+            display: flex;
+
+            img{
+                max-width: 70px;
+                height: 65px;
+                border-radius: 80%;
+                margin-left: 20px;
+                
+            }
+
+            p{
+                position: relative;
+                left: 50px;
+                top: -25px;
+                color: $silver;
+                font-size: 1rem;
+                font-family: Avenir-regular;
+            }
+            input{
+                padding: 15px 120px;
+                margin: 15px 0px;
+                box-sizing: border-box;
+                border: 3px solid $mercury;
+                background-color: $white;
+                border-radius: 5px;
+                font-family: Avenir-regular;
+                
+                
+            }
+
+        }
+    }
+}

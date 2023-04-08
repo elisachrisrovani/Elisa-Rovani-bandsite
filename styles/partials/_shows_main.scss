@@ -4,9 +4,11 @@
 
 
 .shows{
-
+    list-style-type: none;
+    margin-top: 0;
     @include desktop{
         margin-top: 0;
+        
     }
    
     h1{
@@ -27,134 +29,105 @@
     }
    
     &-container{
+        li{
+            height: 415px;
+
+            @include tablet{
+               display: flex;
+                flex-direction: row;
+                height: 800px;
+                width: 80%;
+            }
+
+                    }
 
         @include desktop{
             width: 55%;
             margin-left: 550px;
 
         }
+        &__top{
+            height: 10px;
+
+                @include tablet{
+                    display: flex;
+                    flex-direction: row;
+                }
+            &__header{
+                visibility: hidden;
+                padding: 0;
+                margin: 0;
+                border: none;
+                
+        @include tablet{
+            
+            visibility: visible;
+            color: $silver;
+            font-family: Avenir-regular;
+            font-size: 0.9rem;
+            padding: 2rem 14rem 1rem 3rem;
+            margin-top: 0;
+            list-style-type: none;
+
+            
+        }
+    }
+}
        
         hr{
             border: none;
            background-color:$mercury;
             height: 2px;
-            margin: 30px 0 20px 0;
+            margin: 40px 0 20px 0;
             width: 100%;
             
             @include tablet{
-                margin: 0;
+                
+              // position: relative;
             }
          }
        
         &__block{
             padding: 0;
             margin: 0;
+            height: 10%;
+            
 
             @include tablet{
                 display: flex;
-                flex-direction: row;
-                height: 80px;
-                padding-top: 1rem;
+                flex-direction: column;
+               height: 800px;
+                padding-top: 2rem;
+                margin: 2rem;
+                width: 80%;
                 
             }
             
             &__text{
                 color: $bandSite-black;
                 font-family: Avenir-regular;
-                padding: 0.2rem 0 1rem 1rem;
-                font-size: 1rem;
+              //  padding: 0.2rem 0 1rem 1rem;
+                font-size: 1.5rem;
                 line-height: 1rem;
                 
-                &__one{
-                    color: $bandSite-black;
-                    font-family: Avenir-regular;
-                    padding: 0.2rem 0 1rem 1rem;
-                     font-size: 1rem;
-                     line-height: 1rem;
-                    @include tablet{
-                    font-size: 1.1rem;                     
-                    padding: 0rem 4rem 0 6rem;
-                   
-                     }
-                }
-                &__two{
-                    color: $bandSite-black;
-                    font-family: Avenir-regular;
-                    padding: 0.2rem 0 1rem 1rem;
-                     font-size: 1rem;
-                     line-height: 1rem;
-                    @include tablet{
-                    font-size: 1.1rem;                     
-                    padding: 0rem 5rem 0 6.5rem;
-                   
-                     }
-                }
-                &__three{
-                    color: $bandSite-black;
-                    font-family: Avenir-regular;
-                    padding: 0.2rem 0 1rem 1rem;
-                     font-size: 1rem;
-                     line-height: 1rem;
-                    @include tablet{
-                    font-size: 1.1rem;                     
-                    padding: 0rem 3.8rem 0 7.3rem;
-                   
-                     }
-                }
-                &__four{
-                    color: $bandSite-black;
-                    font-family: Avenir-regular;
-                    padding: 0.2rem 0 1rem 1rem;
-                     font-size: 1rem;
-                     line-height: 1rem;
-                    @include tablet{
-                    font-size: 1.1rem;                     
-                    padding: 0rem 3.2rem 0 7rem;
-                   
-                     }
-                }
-                &__five{
-                    color: $bandSite-black;
-                    font-family: Avenir-regular;
-                    padding: 0.2rem 0 1rem 1rem;
-                     font-size: 1rem;
-                     line-height: 1rem;
-                    @include tablet{
-                    font-size: 1.1rem;                     
-                    padding: 0rem 2.5rem 0 7.1rem;
-                   
-                     }
-                }
-                &__six{
-                    color: $bandSite-black;
-                    font-family: Avenir-regular;
-                    padding: 0.2rem 0 1rem 1rem;
-                     font-size: 1rem;
-                     line-height: 1rem;
-                    @include tablet{
-                    font-size: 1.1rem;                     
-                    padding: 0rem 5rem 0 6rem;
-                   
-                     }
-                }
-                
+            
                 &--highlighted{
                     color: $bandSite-black;
                 font-family: Avenir-demi;
                 padding: 0.2rem 0 1rem 1rem;
-                font-size: 1rem;
+                font-size:1.5rem;
                 line-height: 1rem;
 
                 @include tablet{
                     font-size: 1.1rem;
-                    padding: 0rem 0 0 0rem;
+                    padding: 1rem;
                 }
                 }
                 &__end{
                     color: $bandSite-black;
                 font-family: Avenir-regular;
                 padding: 0.2rem 0 1rem 1rem;
-                font-size: 1rem;
+                font-size: 1.5rem;
                 line-height: 1rem;
                 @include tablet{
                     font-size: 1.1rem;
@@ -168,11 +141,11 @@
             }
 
             &__btn{
-                font-size: 1.1rem;
+                font-size: 1.3rem;
                 text-align: center;
                 align-items: center;
                 padding: 1rem 10.9rem;
-                margin: 10rem 2rem;
+                margin: 20rem 2rem;
                 border-radius: 5px;
                 background-color: $bandSite-black;
                 text-decoration: none;
@@ -188,31 +161,26 @@
             }
 
             &__header{
-                visibility: hidden;
-                padding: 0;
-                margin: 0;
-                @include tablet{
-                    visibility: visible;
-                    color: $silver;
-                    font-family: Avenir-regular;
-                    font-size: 0.9rem;
-                    padding: 2rem 14rem 1rem 3rem;
-                    margin-top: 0;
 
-
-                }
+               
+                
                 &--hidden{
                     color: $silver;
                     font-family: Avenir-regular;
-                    font-size: 0.8rem;
-                    padding: 1rem 0 0 1rem;
+                    font-size: 1.3rem;
+                    padding: 0 0 0 1rem;
                     margin-top: 0;
+                    border: none;
+                   
+                    
 
                     @include tablet{
-                        visibility: hidden;
+                       visibility: hidden;
                     }
                 }
-            }
+                
+                    }
+                    
         }
     }
 }
