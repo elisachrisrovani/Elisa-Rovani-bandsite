@@ -1,0 +1,101 @@
+const showsArray=[
+    { 
+        date: 'Mon Sept 06 2021',
+        venue: 'Ronald Lane',
+        location: 'San Francisco, CA',
+    },
+    {   
+        date: 'Tue Sept 21 2021',
+        venue: 'Pier 3 Easter',
+        location: 'San Francisco, CA',
+    },
+    {
+        date: 'Fri Oct 15 2021',
+        venue: 'View Lounge',
+        location: 'San Francisco, CA',
+    },
+    {
+        date: 'Sat Nov 06 2021',
+        venue: 'Hyatt Agency',
+        location: 'San Francisco, CA',
+    },
+    {
+        date: 'Fri Nov 26 2021',
+        venue: 'Moscow Center',
+        location: 'San Francisco, CA',
+    },
+    {
+        date: 'Wed Dec 15 2021',
+        venue: 'Press Club',
+        location: 'San Francisco, CA',
+    },
+];
+// const showsListHeader = document.querySelector('.shows-container__top');
+const showsList = document.querySelector('.shows-container__block');
+
+
+
+for(let i = 0; i < showsArray.length; i++){
+    const listItem = document.createElement('li');
+    
+
+    const headerDate = document.createElement('h3');
+    headerDate.innerHTML="DATE";
+    headerDate.classList.add('shows-container__block__header--hidden');
+
+    // const headerDateTop = document.createElement('h3');
+    // headerDateTop.innerHTML="DATE";
+    // headerDateTop.classList.add('shows-container__top__header');
+   
+   
+    const dateElement = document.createElement('h3');
+    dateElement.innerText = showsArray[i].date;
+    dateElement.classList.add("shows-container__block__text--highlighted");
+   
+    // const headerVenueTop = document.createElement('h3');
+    // headerVenueTop.innerHTML="VENUE";
+    // headerVenueTop.classList.add('shows-container__top__header');
+
+    const headerVenue = document.createElement('h3');
+    headerVenue.innerHTML = "VENUE";
+    headerVenue.classList.add("shows-container__block__header--hidden");
+
+    const venueElement = document.createElement('p');
+    venueElement.innerText = showsArray[i].venue;
+    venueElement.classList.add("shows-container__block__text");
+
+    // const headerLocationTop = document.createElement('h3');
+    // headerLocationTop.innerHTML="LOCATION";
+    // headerLocationTop.classList.add('shows-container__top__header');
+
+
+    const headerLocation = document.createElement('h3');
+    headerLocation.innerHTML = "LOCATION";
+    headerLocation.classList.add('shows-container__block__header--hidden');
+
+    const locationElement = document.createElement('p');
+    locationElement.innerText = showsArray [i].location;
+    locationElement.classList.add("shows-container__block__text__end");
+
+    const btnElement = document.createElement('a');
+    btnElement.innerHTML="BUY TICKETS";
+    btnElement.classList.add("shows-container__block__btn");
+
+    const hrElement = document.createElement('hr');
+
+     listItem.appendChild(headerDate);
+    listItem.appendChild(dateElement);
+    listItem.appendChild(headerVenue);
+    listItem.appendChild(venueElement);
+    listItem.appendChild(headerLocation);
+    listItem.appendChild(locationElement);
+    listItem.appendChild(btnElement);
+    listItem.appendChild(hrElement);
+    showsList.appendChild(listItem);
+
+    // listItem.appendChild(headerDateTop);
+    // listItem.appendChild(headerVenueTop);
+    // listItem.appendChild(headerLocationTop);
+    // showsListHeader.appendChild(listItem);
+}
+
