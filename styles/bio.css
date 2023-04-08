@@ -1354,7 +1354,7 @@ footer {
   color: #FFFFFF;
   position: relative;
   font-family: Avenir-regular;
-  left: 265px;
+  left: 565px;
   bottom: 6rem;
   width: 500px;
 }
@@ -1381,14 +1381,16 @@ footer {
   color: #FFFFFF;
   position: relative;
   font-family: Avenir-regular;
-  left: 265px;
+  left: 565px;
   bottom: 5.5rem;
   width: 70%;
 }
 @media (min-width: 768px) {
   .hero-shows__title--music {
     font-size: 4.3rem;
-    width: 60%;
+    width: 200%;
+    bottom: 10rem;
+    left: 45px;
   }
 }
 @media (min-width: 1280px) {
@@ -1400,10 +1402,26 @@ footer {
   }
 }
 
-.hero-soundcloud {
+.hero-soundcloud--small {
   position: relative;
   top: 130px;
-  right: 250px;
+  left: 50px;
+}
+@media (min-width: 768px) {
+  .hero-soundcloud--small {
+    visibility: hidden;
+  }
+}
+.hero-soundcloud--medium {
+  visibility: collapse;
+}
+@media (min-width: 768px) {
+  .hero-soundcloud--medium {
+    visibility: visible;
+    position: relative;
+    top: 130px;
+    right: 400px;
+  }
 }
 
 @font-face {
