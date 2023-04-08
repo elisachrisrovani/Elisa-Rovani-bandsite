@@ -30,32 +30,19 @@ const showsArray=[
         location: 'San Francisco, CA',
     },
 ];
-// const showsListHeader = document.querySelector('.shows-container__top');
 const showsList = document.querySelector('.shows-container__block');
-
-
 
 for(let i = 0; i < showsArray.length; i++){
     const listItem = document.createElement('li');
-    
 
     const headerDate = document.createElement('h3');
     headerDate.innerHTML="DATE";
     headerDate.classList.add('shows-container__block__header--hidden');
-
-    // const headerDateTop = document.createElement('h3');
-    // headerDateTop.innerHTML="DATE";
-    // headerDateTop.classList.add('shows-container__top__header');
-   
-   
     const dateElement = document.createElement('h3');
+
     dateElement.innerText = showsArray[i].date;
     dateElement.classList.add("shows-container__block__text--highlighted");
-   
-    // const headerVenueTop = document.createElement('h3');
-    // headerVenueTop.innerHTML="VENUE";
-    // headerVenueTop.classList.add('shows-container__top__header');
-
+  
     const headerVenue = document.createElement('h3');
     headerVenue.innerHTML = "VENUE";
     headerVenue.classList.add("shows-container__block__header--hidden");
@@ -63,11 +50,6 @@ for(let i = 0; i < showsArray.length; i++){
     const venueElement = document.createElement('p');
     venueElement.innerText = showsArray[i].venue;
     venueElement.classList.add("shows-container__block__text");
-
-    // const headerLocationTop = document.createElement('h3');
-    // headerLocationTop.innerHTML="LOCATION";
-    // headerLocationTop.classList.add('shows-container__top__header');
-
 
     const headerLocation = document.createElement('h3');
     headerLocation.innerHTML = "LOCATION";
@@ -92,10 +74,5 @@ for(let i = 0; i < showsArray.length; i++){
     listItem.appendChild(btnElement);
     listItem.appendChild(hrElement);
     showsList.appendChild(listItem);
-
-    // listItem.appendChild(headerDateTop);
-    // listItem.appendChild(headerVenueTop);
-    // listItem.appendChild(headerLocationTop);
-    // showsListHeader.appendChild(listItem);
 }
 

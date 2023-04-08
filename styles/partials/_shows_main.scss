@@ -40,6 +40,10 @@
             }
 
                     }
+                    @include tablet{
+                        width: 95%;
+                        margin-left: 1rem;
+                    }      
 
         @include desktop{
             width: 55%;
@@ -109,12 +113,80 @@
               //  padding: 0.2rem 0 1rem 1rem;
                 font-size: 1.5rem;
                 line-height: 1rem;
-
-                @include tablet{
-                    width: 6rem;
+                
+                &__one{
+                    color: $bandSite-black;
+                    font-family: Avenir-regular;
+                    padding: 0.2rem 0 1rem 1rem;
+                     font-size: 1rem;
+                     line-height: 1rem;
+                    @include tablet{
+                    font-size: 1.1rem;                     
+                    padding: 0rem 4rem 0 6rem;
+                   
+                     }
+                }
+                &__two{
+                    color: $bandSite-black;
+                    font-family: Avenir-regular;
+                    padding: 0.2rem 0 1rem 1rem;
+                     font-size: 1rem;
+                     line-height: 1rem;
+                    @include tablet{
+                    font-size: 1.1rem;                     
+                    padding: 0rem 5rem 0 6.5rem;
+                   
+                     }
+                }
+                &__three{
+                    color: $bandSite-black;
+                    font-family: Avenir-regular;
+                    padding: 0.2rem 0 1rem 1rem;
+                     font-size: 1rem;
+                     line-height: 1rem;
+                    @include tablet{
+                    font-size: 1.1rem;                     
+                    padding: 0rem 3.8rem 0 7.3rem;
+                   
+                     }
+                }
+                &__four{
+                    color: $bandSite-black;
+                    font-family: Avenir-regular;
+                    padding: 0.2rem 0 1rem 1rem;
+                     font-size: 1rem;
+                     line-height: 1rem;
+                    @include tablet{
+                    font-size: 1.1rem;                     
+                    padding: 0rem 3.2rem 0 7rem;
+                   
+                     }
+                }
+                &__five{
+                    color: $bandSite-black;
+                    font-family: Avenir-regular;
+                    padding: 0.2rem 0 1rem 1rem;
+                     font-size: 1rem;
+                     line-height: 1rem;
+                    @include tablet{
+                    font-size: 1.1rem;                     
+                    padding: 0rem 2.5rem 0 7.1rem;
+                   
+                     }
+                }
+                &__six{
+                    color: $bandSite-black;
+                    font-family: Avenir-regular;
+                    padding: 0.2rem 0 1rem 1rem;
+                     font-size: 1rem;
+                     line-height: 1rem;
+                    @include tablet{
+                    font-size: 1.1rem;                     
+                    padding: 0rem 5rem 0 6rem;
+                   
+                     }
                 }
                 
-            
                 &--highlighted{
                     color: $bandSite-black;
                 font-family: Avenir-demi;
@@ -124,8 +196,7 @@
 
                 @include tablet{
                     font-size: 1.1rem;
-                    padding: 1rem;
-                    width: 6rem;
+                    padding: 0rem 0 0 0rem;
                 }
                 }
                 &__end{
@@ -175,13 +246,9 @@
                     font-size: 1.3rem;
                     padding: 0 0 0 1rem;
                     margin-top: 0;
-                    border: none;
-                   
+
                     @include tablet{
-                       visibility: hidden;
-                       margin: 0;
-                       padding: 0;
-                       list-style: none;
+                        visibility: hidden;
                     }
                 }
                 

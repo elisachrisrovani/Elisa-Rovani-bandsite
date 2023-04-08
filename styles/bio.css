@@ -1792,6 +1792,12 @@ footer {
     width: 80%;
   }
 }
+@media (min-width: 768px) {
+  .shows-container {
+    width: 95%;
+    margin-left: 1rem;
+  }
+}
 @media (min-width: 1280px) {
   .shows-container {
     width: 55%;
@@ -1852,9 +1858,82 @@ footer {
   font-size: 1.5rem;
   line-height: 1rem;
 }
+.shows-container__block__text__one {
+  color: #323232;
+  font-family: Avenir-regular;
+  padding: 0.2rem 0 1rem 1rem;
+  font-size: 1rem;
+  line-height: 1rem;
+}
 @media (min-width: 768px) {
-  .shows-container__block__text {
-    width: 6rem;
+  .shows-container__block__text__one {
+    font-size: 1.1rem;
+    padding: 0rem 4rem 0 6rem;
+  }
+}
+.shows-container__block__text__two {
+  color: #323232;
+  font-family: Avenir-regular;
+  padding: 0.2rem 0 1rem 1rem;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+@media (min-width: 768px) {
+  .shows-container__block__text__two {
+    font-size: 1.1rem;
+    padding: 0rem 5rem 0 6.5rem;
+  }
+}
+.shows-container__block__text__three {
+  color: #323232;
+  font-family: Avenir-regular;
+  padding: 0.2rem 0 1rem 1rem;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+@media (min-width: 768px) {
+  .shows-container__block__text__three {
+    font-size: 1.1rem;
+    padding: 0rem 3.8rem 0 7.3rem;
+  }
+}
+.shows-container__block__text__four {
+  color: #323232;
+  font-family: Avenir-regular;
+  padding: 0.2rem 0 1rem 1rem;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+@media (min-width: 768px) {
+  .shows-container__block__text__four {
+    font-size: 1.1rem;
+    padding: 0rem 3.2rem 0 7rem;
+  }
+}
+.shows-container__block__text__five {
+  color: #323232;
+  font-family: Avenir-regular;
+  padding: 0.2rem 0 1rem 1rem;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+@media (min-width: 768px) {
+  .shows-container__block__text__five {
+    font-size: 1.1rem;
+    padding: 0rem 2.5rem 0 7.1rem;
+  }
+}
+.shows-container__block__text__six {
+  color: #323232;
+  font-family: Avenir-regular;
+  padding: 0.2rem 0 1rem 1rem;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+@media (min-width: 768px) {
+  .shows-container__block__text__six {
+    font-size: 1.1rem;
+    padding: 0rem 5rem 0 6rem;
   }
 }
 .shows-container__block__text--highlighted {
@@ -1867,8 +1946,7 @@ footer {
 @media (min-width: 768px) {
   .shows-container__block__text--highlighted {
     font-size: 1.1rem;
-    padding: 1rem;
-    width: 6rem;
+    padding: 0rem 0 0 0rem;
   }
 }
 .shows-container__block__text__end {
@@ -1911,14 +1989,10 @@ footer {
   font-size: 1.3rem;
   padding: 0 0 0 1rem;
   margin-top: 0;
-  border: none;
 }
 @media (min-width: 768px) {
   .shows-container__block__header--hidden {
     visibility: hidden;
-    margin: 0;
-    padding: 0;
-    list-style: none;
   }
 }
 
