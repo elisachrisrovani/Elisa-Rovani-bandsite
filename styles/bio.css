@@ -1354,8 +1354,9 @@ footer {
   color: #FFFFFF;
   position: relative;
   font-family: Avenir-regular;
-  left: 15px;
-  bottom: 3rem;
+  left: 265px;
+  bottom: 6rem;
+  width: 500px;
 }
 @media (min-width: 768px) {
   .hero-shows__title--album {
@@ -1380,8 +1381,8 @@ footer {
   color: #FFFFFF;
   position: relative;
   font-family: Avenir-regular;
-  left: 18px;
-  bottom: 3rem;
+  left: 265px;
+  bottom: 5.5rem;
   width: 70%;
 }
 @media (min-width: 768px) {
@@ -1397,6 +1398,12 @@ footer {
     bottom: 0.3rem;
     left: -265px;
   }
+}
+
+.hero-soundcloud {
+  position: relative;
+  top: 130px;
+  right: 250px;
 }
 
 @font-face {
@@ -1824,9 +1831,13 @@ footer {
 .shows-container__block__text {
   color: #323232;
   font-family: Avenir-regular;
-  padding: 0.2rem 0 1rem 1rem;
   font-size: 1.5rem;
   line-height: 1rem;
+}
+@media (min-width: 768px) {
+  .shows-container__block__text {
+    width: 6rem;
+  }
 }
 .shows-container__block__text--highlighted {
   color: #323232;
@@ -1839,6 +1850,7 @@ footer {
   .shows-container__block__text--highlighted {
     font-size: 1.1rem;
     padding: 1rem;
+    width: 6rem;
   }
 }
 .shows-container__block__text__end {
@@ -1886,6 +1898,9 @@ footer {
 @media (min-width: 768px) {
   .shows-container__block__header--hidden {
     visibility: hidden;
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
 }
 
@@ -1933,4 +1948,8 @@ footer {
   background-color: #FFFFFF;
   border-radius: 5px;
   font-family: Avenir-regular;
+}
+
+* {
+  border: 1px dashed red;
 }/*# sourceMappingURL=bio.css.map */

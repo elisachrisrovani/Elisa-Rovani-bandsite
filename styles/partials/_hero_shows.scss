@@ -24,7 +24,6 @@
     }
     
     
-   
     &::before{
         content: "";
         position: absolute;
@@ -35,16 +34,17 @@
         background-color: rgba(50,50,50,0.50);
     }
     
-    
-
     &__title{
+
+               
         &--album{
         font-size: 1.3rem;
         color:$white;
         position: relative;
         font-family: Avenir-regular;
-        left: 15px;
-        bottom: 3rem;
+        left: 265px;
+        bottom: 6rem;
+        width: 500px;
        
         
         @include tablet{
@@ -67,8 +67,8 @@
         color:$white;
         position: relative;
         font-family: Avenir-regular;
-        left: 18px;
-        bottom: 3rem;
+        left: 265px;
+        bottom: 5.5rem;
         width: 70%;
        
         @include tablet{
@@ -86,4 +86,10 @@
     }
 }
    
+}
+.hero-soundcloud{
+    position: relative;
+    top: 130px;
+    right: 250px;
+    
 }
