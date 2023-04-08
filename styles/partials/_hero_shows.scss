@@ -42,13 +42,14 @@
         color:$white;
         position: relative;
         font-family: Avenir-regular;
-        left: 565px;
+        left: 265px;
         bottom: 6rem;
         width: 500px;
        
         
         @include tablet{
-            font-size: 2rem;
+            font-size: 3rem;
+            width: 600px;
             position: absolute;
             left: 5%;
             top: 5%;
@@ -67,15 +68,15 @@
         color:$white;
         position: relative;
         font-family: Avenir-regular;
-        left: 565px;
+        left: 260px;
         bottom: 5.5rem;
         width: 70%;
        
         @include tablet{
             font-size: 4.3rem;
-            width: 200%;
-            bottom: 10rem;
-            left: 45px;
+            width: 600px;
+            bottom: 5rem;
+            left: 140px;
         }
 
         @include desktop{
@@ -91,25 +92,11 @@
 }
 .hero-soundcloud{
 
-    &--small{
-        
     position: relative;
     top: 130px;
-    left: 50px;
+    left: -250px;
     @include tablet{
-        visibility: hidden;
-
-    }
-    }
-   
-    &--medium{
-        visibility: collapse;
-        @include tablet{
-            visibility:visible;
-            position: relative;
-            top: 130px;
-            right: 400px;
-        }
-        }
-       
+        top: 250px;
+        left: -465px;
+    }    
 }
