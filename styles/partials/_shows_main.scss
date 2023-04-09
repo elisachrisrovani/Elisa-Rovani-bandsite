@@ -39,14 +39,15 @@
                width: 100%;
               // padding: 1rem;
             }
-
+            
+            
             
                     }
                         
 
         @include desktop{
             width: 55%;
-            margin-left: 550px;
+            margin-left: 300px;
 
         }
         &__top{
@@ -85,8 +86,11 @@
             width: 100%;
             
             @include tablet{
-                
             
+                position: relative;
+                top: 25px;
+                height: 40px;
+              
             }
          }
        
@@ -100,9 +104,9 @@
                 display: flex;
                 flex-direction: column;
 
-               padding: 2rem 1rem;
-                margin: 2rem;
-               width: 80%;
+               padding: 1rem 0;
+               margin: 2rem 0;
+               width: 60%;
                 
             }
             
@@ -114,7 +118,7 @@
                 line-height: 1rem;
                 @include tablet{
                     white-space: nowrap;
-                    text-align: left;
+                    padding: 0 2rem
                 }
                 
                 
@@ -130,7 +134,8 @@
                 @include tablet{
                     font-size: 1.5rem;
                     white-space: nowrap;
-                    //adding: 0rem 0 0 0rem;
+                    
+                    padding: 0rem 0 0 0rem;
                 }
                 }
                 &__end{
@@ -164,11 +169,12 @@
                 @include tablet{
                     
                     position: relative;
-                    top: -295px;
+                    top: -315px;
                     left: 75px;
-                    padding: 2rem 8rem;
+                    padding: 1.5rem 4rem 2.5rem 4rem;
                     font-size: 1.5rem;
-                    font-size: 1rem;
+                    align-items: center;
+                    
                     white-space: nowrap;
                 }
             }

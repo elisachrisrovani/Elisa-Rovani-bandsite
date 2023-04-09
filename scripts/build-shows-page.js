@@ -49,7 +49,7 @@ for(let i = 0; i < showsArray.length; i++){
 
     const venueElement = document.createElement('p');
     venueElement.innerText = showsArray[i].venue;
-    venueElement.classList.add("shows-container__block__text");
+    venueElement.classList.add("shows-container__block__text" );
 
     const headerLocation = document.createElement('h3');
     headerLocation.innerHTML = "LOCATION";
@@ -64,6 +64,7 @@ for(let i = 0; i < showsArray.length; i++){
     btnElement.classList.add("shows-container__block__btn");
 
     const hrElement = document.createElement('hr');
+    hrElement.classList.add("shows-container__hr");
 
      listItem.appendChild(headerDate);
     listItem.appendChild(dateElement);
