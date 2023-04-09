@@ -1363,8 +1363,8 @@ footer {
     font-size: 3rem;
     width: 600px;
     position: absolute;
-    left: 5%;
-    top: 5%;
+    left: 60px;
+    top: 4rem;
     font-family: Avenir-demi;
   }
 }
@@ -1373,7 +1373,7 @@ footer {
     font-size: 2.3rem;
     position: absolute;
     left: 10%;
-    top: 25%;
+    top: 6rem;
     font-family: Avenir-regular;
   }
 }
@@ -1396,10 +1396,10 @@ footer {
 }
 @media (min-width: 1280px) {
   .hero-shows__title--music {
-    font-size: 4.3rem;
+    font-size: 4.8rem;
     width: 55%;
     bottom: 0.3rem;
-    left: -265px;
+    left: 75px;
   }
 }
 
@@ -1412,6 +1412,12 @@ footer {
   .hero-soundcloud {
     top: 250px;
     left: -465px;
+  }
+}
+@media (min-width: 1280px) {
+  .hero-soundcloud {
+    top: 10px;
+    left: -85px;
   }
 }
 
