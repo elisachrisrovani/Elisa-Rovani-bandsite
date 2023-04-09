@@ -35,15 +35,14 @@
             @include tablet{
                display: flex;
                 flex-direction: row;
-                height: 800px;
-                width: 80%;
+              height: 100px;
+               width: 100%;
+              // padding: 1rem;
             }
 
+            
                     }
-                    @include tablet{
-                        width: 95%;
-                        margin-left: 1rem;
-                    }      
+                        
 
         @include desktop{
             width: 55%;
@@ -87,7 +86,7 @@
             
             @include tablet{
                 
-              // position: relative;
+            
             }
          }
        
@@ -100,103 +99,38 @@
             @include tablet{
                 display: flex;
                 flex-direction: column;
-               height: 800px;
-                padding-top: 2rem;
+
+               padding: 2rem 1rem;
                 margin: 2rem;
-                width: 80%;
+               width: 80%;
                 
             }
             
             &__text{
                 color: $bandSite-black;
                 font-family: Avenir-regular;
-              //  padding: 0.2rem 0 1rem 1rem;
+                padding: 0.2rem 0 1rem 1rem;
                 font-size: 1.5rem;
                 line-height: 1rem;
+                @include tablet{
+                    white-space: nowrap;
+                    text-align: left;
+                }
                 
-                &__one{
-                    color: $bandSite-black;
-                    font-family: Avenir-regular;
-                    padding: 0.2rem 0 1rem 1rem;
-                     font-size: 1rem;
-                     line-height: 1rem;
-                    @include tablet{
-                    font-size: 1.1rem;                     
-                    padding: 0rem 4rem 0 6rem;
-                   
-                     }
-                }
-                &__two{
-                    color: $bandSite-black;
-                    font-family: Avenir-regular;
-                    padding: 0.2rem 0 1rem 1rem;
-                     font-size: 1rem;
-                     line-height: 1rem;
-                    @include tablet{
-                    font-size: 1.1rem;                     
-                    padding: 0rem 5rem 0 6.5rem;
-                   
-                     }
-                }
-                &__three{
-                    color: $bandSite-black;
-                    font-family: Avenir-regular;
-                    padding: 0.2rem 0 1rem 1rem;
-                     font-size: 1rem;
-                     line-height: 1rem;
-                    @include tablet{
-                    font-size: 1.1rem;                     
-                    padding: 0rem 3.8rem 0 7.3rem;
-                   
-                     }
-                }
-                &__four{
-                    color: $bandSite-black;
-                    font-family: Avenir-regular;
-                    padding: 0.2rem 0 1rem 1rem;
-                     font-size: 1rem;
-                     line-height: 1rem;
-                    @include tablet{
-                    font-size: 1.1rem;                     
-                    padding: 0rem 3.2rem 0 7rem;
-                   
-                     }
-                }
-                &__five{
-                    color: $bandSite-black;
-                    font-family: Avenir-regular;
-                    padding: 0.2rem 0 1rem 1rem;
-                     font-size: 1rem;
-                     line-height: 1rem;
-                    @include tablet{
-                    font-size: 1.1rem;                     
-                    padding: 0rem 2.5rem 0 7.1rem;
-                   
-                     }
-                }
-                &__six{
-                    color: $bandSite-black;
-                    font-family: Avenir-regular;
-                    padding: 0.2rem 0 1rem 1rem;
-                     font-size: 1rem;
-                     line-height: 1rem;
-                    @include tablet{
-                    font-size: 1.1rem;                     
-                    padding: 0rem 5rem 0 6rem;
-                   
-                     }
-                }
+                
                 
                 &--highlighted{
                     color: $bandSite-black;
                 font-family: Avenir-demi;
-                padding: 0.2rem 0 1rem 1rem;
+                padding: 0.2rem 0rem 1rem 0rem;
                 font-size:1.5rem;
                 line-height: 1rem;
+                margin-left: 1rem;
 
                 @include tablet{
-                    font-size: 1.1rem;
-                    padding: 0rem 0 0 0rem;
+                    font-size: 1.5rem;
+                    white-space: nowrap;
+                    //adding: 0rem 0 0 0rem;
                 }
                 }
                 &__end{
@@ -206,12 +140,11 @@
                 font-size: 1.5rem;
                 line-height: 1rem;
                 @include tablet{
-                    font-size: 1.1rem;
-                   position: relative;
-                   left: 55px;
-                   //margin-right: 90px;
-                  //font-family: Avenir-demi;
-                   // padding: 0rem 0 0 0.5rem;
+                    font-size: 1.5rem;
+                //    position: relative;
+                //    left: 55px;
+                   white-space: nowrap;
+                   
                 }
                 }
             }
@@ -229,10 +162,14 @@
                 font-family: Avenir-regular;
 
                 @include tablet{
+                    
                     position: relative;
-                    top: -155px;
+                    top: -295px;
                     left: 75px;
-                    padding: 1rem 2rem 2rem 2rem;
+                    padding: 2rem 8rem;
+                    font-size: 1.5rem;
+                    font-size: 1rem;
+                    white-space: nowrap;
                 }
             }
 
