@@ -6,22 +6,107 @@
         font-size: 3rem;
     }
     &-container{
-
+        hr{
+            border: none;
+                    background-color:$mercury;
+                    height: 2px;
+                    margin: 0;
+                    padding: 0 70px;
+                    position: relative;
+                    width: 90%;
+                    top: -55px;
+                    left: -145px;
+        }
        
         &__top{
             display: flex;
+           //height: 2050px;
+            
 
             img{
-                max-width: 70px;
+                width: 68px;
                 height: 65px;
                 border-radius: 80%;
                 margin-left: 20px;
+                position: relative;
+                top: 12px;
                 
             }
-
+            &__list{
+            
+              
+               
+                h3{
+                    position: relative;
+                    left: -10px;
+                    top: -5px;
+                    color: $bandSite-black;
+                    font-size: 1.5rem;
+                    font-family: Avenir-bold;
+                    margin: 0;
+                }
+                p{
+                    position: relative;
+                    left: 390px;
+                    top: -55px;
+                    color: $silver;
+                    font-size: 1.3rem;
+                    font-family: Avenir-regular;
+                }
+                h4{
+                    position: relative;
+                    left: -10px;
+                    line-height: 2.5rem;
+                    top: -65px;
+                    color: $bandSite-black;
+                    font-size: 1.5rem;
+                    font-family: Avenir-regular;
+                    margin: 0
+                }
+                hr{
+                    border: none;
+                    background-color:$mercury;
+                    height: 2px;
+                    margin: 0;
+                    padding: 0 80px;
+                    position: relative;
+                    width: 100%;
+                    top: -55px;
+                    left: -145px;
+                    
+                 }
+                 div{
+                    background-color: $mercury;
+                    border: 1px solid $mercury;
+                    width: 65px;
+                    height: 60px;
+                    border-radius: 80%;
+                    margin-left: 20px;
+                    position: absolute;
+                    left: 20px;
+                    margin-bottom: 305px;
+                 }
+            }
+            
+            
             
             &__form{
-
+                height: 1400px;
+                hr{
+                    border: none;
+                    background-color:$mercury;
+                    height: 2px;
+                    margin: 0;
+                    padding: 0 70px;
+                    margin: 0 2rem;
+                    position: relative;
+                    width: 85%;
+                    top: -55px;
+                    left: -105px;
+                    
+                    
+                 }
+                
                 &__name{
                     position: relative;
                     left: 20px;
@@ -89,9 +174,9 @@
                 background-color: $bandSite-black;
                 text-decoration: none;
                 color: $white;
-                font-family: Avenir-demi;
+                font-family: Avenir-regular;
                 position: relative;
-                top: -50px;
+                top: -80px;
                 }
             }
             

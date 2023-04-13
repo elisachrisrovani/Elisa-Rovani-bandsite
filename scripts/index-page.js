@@ -69,19 +69,27 @@ function appendMessages() {
 
     const postedName = document.createElement("h3");
     postedName.innerText = messages[i].name;
-    postedName.classList.add(".message-container__top__list__title")
+    postedName.classList.add(".message-container__top__list__username");
+
+    const divElement = document.createElement('div');
+    divElement.classList.add(".message-container__top__list__avatar");
 
     const postedDate = document.createElement("p");
     postedDate.innerText = messages[i].date;
-    postedDate.classList.add(".message-container__top__list__title")
+    postedDate.classList.add(".message-container__top__list__date")
 
     const postedComment = document.createElement("h4");
     postedComment.innerText = messages[i].message;
-    postedComment.classList.add(".message-container__top__list__title")
+    postedComment.classList.add(".message-container__top__list__message")
 
+    const hrElement = document.createElement('hr');
+    hrElement.classList.add(".message-container__top__list")
+
+    messageList.appendChild(divElement);
     messageList.appendChild(postedName);
     messageList.appendChild(postedDate);
     messageList.appendChild(postedComment);
+    messageList.appendChild(hrElement);
   }
 }
 
