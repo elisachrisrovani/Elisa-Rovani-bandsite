@@ -105,9 +105,18 @@
                 <div class="message-container__top">
                     <img src="/assets/images/Mohan-muruge.jpg" alt="Mohan-muruge">        
                                                        
-                <div class="message-container__top">
-                    <p>NAME</p>   
-                    <input type="text" name="text" value="Enter your name" id="text">
+                <div class="message-container__top__form">
+                        <p class="message-container__top__form__name">NAME</p>
+                        <form id="messageForm">
+                        <input class ="message-container__top__form__name__input"type="text" placeholder="Enter your name"autocomplete = "off" name="userName">
+                        <p class="message-container__top__form__comment">COMMENT</p>
+                        <input class ="message-container__top__form__comment__input" type="text" placeholder="Add a new comment" autocomplete = "off" name="message">
+                        <button class ="message-container__top__form__btn" type="submit">COMMENT</button>
+                      </form>
+                    
+                    <ul class="message-container__top__list"></ul>
+                    
+                      
                 </div>
                 <br>
 
@@ -188,5 +197,6 @@
                 </div>    
         </div>
     </footer>
+ <script src="/scripts/index-page.js"></script>
 </body>
 </html>

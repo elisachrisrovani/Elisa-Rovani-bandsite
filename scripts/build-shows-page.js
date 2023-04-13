@@ -39,7 +39,18 @@ const showsList = document.querySelector('.shows-container__block');
 
 for(let i = 0; i < showsArray.length; i++){
     const listItem = document.createElement('li');
+    
+    // function buttonHandler (event) {
+     
+    //     console.log('Clicked');
+    // }
 
+    // const list = document.querySelector('li');
+
+    // list.onfocus = buttonHandler;
+    // list.addEventListener('click', buttonHandler);
+    
+    
     const headerDate = document.createElement('h3');
     headerDate.innerHTML="DATE";
     headerDate.classList.add('shows-container__block__header--hidden');
@@ -160,7 +171,7 @@ for(let i = 0; i < showsArray2.length; i++){
     btnElement.classList.add("shows-container__block__third__btn");
 
     const hrElement = document.createElement('hr');
-    hrElement.classList.add("shows-container__hr");
+    hrElement.classList.add("shows-container__block__third__hr");
 
      listItem.appendChild(headerDate);
     listItem.appendChild(dateElement);
@@ -205,7 +216,7 @@ for(let i = 0; i < showsArray2.length; i++){
     btnElement.classList.add("shows-container__block__fourth__btn");
 
     const hrElement = document.createElement('hr');
-    hrElement.classList.add("shows-container__hr");
+    hrElement.classList.add("shows-container__block__fourth__hr");
 
      listItem.appendChild(headerDate);
     listItem.appendChild(dateElement);
@@ -250,7 +261,7 @@ for(let i = 0; i < showsArray2.length; i++){
     btnElement.classList.add("shows-container__block__fifth__btn");
 
     const hrElement = document.createElement('hr');
-    hrElement.classList.add("shows-container__hr");
+    hrElement.classList.add("shows-container__block__fifth__hr");
 
      listItem.appendChild(headerDate);
     listItem.appendChild(dateElement);
@@ -295,9 +306,11 @@ for(let i = 0; i < showsArray2.length; i++){
     btnElement.classList.add("shows-container__block__sixth__btn");
 
     const hrElement = document.createElement('hr');
-    hrElement.classList.add("shows-container__hr");
+    hrElement.classList.add("shows-container__block__sixth__hr");
 
-     listItem.appendChild(headerDate);
+    
+
+    listItem.appendChild(headerDate);
     listItem.appendChild(dateElement);
     listItem.appendChild(headerVenue);
     listItem.appendChild(venueElement);

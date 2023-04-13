@@ -31,13 +31,13 @@
     &-container{
         li{
             height: 415px;
-
+           
             @include tablet{
                display: flex;
                 flex-direction: row;
-              height: 100px;
-               width: 100%;
-              // padding: 1rem;
+                 height: 120px;
+               //width: 200%;
+                
             }
             
             
@@ -47,7 +47,7 @@
 
         @include desktop{
             width: 55%;
-            margin-left: 300px;
+            margin-left: 650px;
 
         }
 
@@ -86,8 +86,8 @@
             padding: 0;
             margin: 0;
             height: 10%;
-            
 
+            
             @include tablet{
                 display: flex;
                 flex-direction: column;
@@ -97,7 +97,17 @@
                width: 40%;
                 
             }
-
+            li{
+                @include tablet{
+                    height: 110px;
+                    width: 250%;
+                }
+                
+                &:hover{
+                 background-color: $mercury;
+                   }
+                
+            }
             
             hr{
                 border: none;
@@ -108,7 +118,10 @@
                 
                 @include tablet{
                 
-                    visibility: visible;
+                    position: relative;
+                    right: 1115px;
+                    top: 68px;
+                    padding: 0 32rem;
                     
                   
                 }
@@ -125,7 +138,7 @@
                     white-space: nowrap;
                     position: relative;
                     right: 95px;
-                    top: -4px;
+                    top: 30px;
                     font-size: 1.5rem;
                 }
                 
@@ -144,7 +157,7 @@
                     white-space: nowrap;
                     position: relative;
                     right: 38px;
-                    top: -4px;
+                    top: 30px;
                     font-size:1.4rem;
                 }
                 }
@@ -159,10 +172,36 @@
                      white-space: nowrap;
                      position: relative;
                      right: 120px;
-                     top: -4px;
+                     top: 30px;
                 }
+                }
+                
+            }
+            &__btn{
+                font-size: 1.3rem; 
+                text-align: center;
+                align-items: center;
+                padding: 1rem 10.9rem;
+                margin: 20rem 2rem;
+                border-radius: 5px;
+                background-color: $bandSite-black;
+                text-decoration: none;
+                color: $white;
+                font-family: Avenir-regular;
+
+                @include tablet{
+                    
+                    position: relative;
+                    top: -285px;
+                    left: -95px;
+                    padding: 1.5rem 3rem 2.5rem 3rem;
+                    font-size: 1.5rem;
+                    align-items: center;
+                    font-family: Avenir-demi;
+                    white-space: nowrap;
                 }
             }
+
             &__second{
                 &__text{
                     color: $bandSite-black;
@@ -174,7 +213,7 @@
                         white-space: nowrap;
                         position: relative;
                         right: 80px;
-                        top: -4px;
+                        top: 30px;
                         font-size: 1.5rem;
                     }
                     
@@ -193,7 +232,7 @@
                     white-space: nowrap;
                     position: relative;
                     right: 38px;
-                    top: -4px;
+                    top: 30px;
                     font-size:1.4rem;
                         
                     }
@@ -209,11 +248,20 @@
                      white-space: nowrap;
                      position: relative;
                      right: 110px;
-                     top: -4px;
+                     top: 30px;
                        
                     }
                     }
                 }
+                hr{
+                    border: none;
+                    background-color:$mercury;
+                    height: 2px;
+                    margin: 40px 0 20px 0;
+                    width: 100%;
+                    
+                    
+                 }
                 &__btn{
                     font-size: 1.3rem;
                     text-align: center;
@@ -229,7 +277,7 @@
                     @include tablet{
                         
                         position: relative;
-                        top: -325px;
+                        top: -285px;
                         right: 85px;
                         padding: 1.5rem 3rem 2.5rem 3rem;
                         font-size: 1.5rem;
@@ -251,7 +299,7 @@
                         white-space: nowrap;
                         position: relative;
                         right: 60px;
-                        top: -4px;
+                        top: 30px;
                         font-size: 1.5rem;
                     }
                     
@@ -270,7 +318,7 @@
                     white-space: nowrap;
                     position: relative;
                     right: 38px;
-                    top: -4px;
+                    top: 30px;
                     font-size:1.4rem;
                     }
                     }
@@ -285,7 +333,7 @@
                         white-space: nowrap;
                         position: relative;
                         right: 95px;
-                        top: -4px;
+                        top: 30px;
                        
                     }
                     }
@@ -305,7 +353,7 @@
                     @include tablet{
                         
                         position: relative;
-                        top: -325px;
+                        top: -285px;
                         right:70px;
                         padding: 1.5rem 3rem 2.5rem 3rem;
                         font-size: 1.5rem;
@@ -314,6 +362,15 @@
                         white-space: nowrap;
                     }
                 }
+                hr{
+                    border: none;
+                    background-color:$mercury;
+                    height: 2px;
+                    margin: 40px 0 20px 0;
+                    width: 100%;
+                    
+                    
+                 }
     
             }
             &__fourth{
@@ -327,7 +384,7 @@
                         white-space: nowrap;
                         position: relative;
                         right: 70px;
-                        top: -4px;
+                        top: 30px;
                         font-size: 1.5rem;
                     }
                     
@@ -346,7 +403,7 @@
                     white-space: nowrap;
                     position: relative;
                     right: 38px;
-                    top: -4px;
+                    top: 30px;
                     font-size:1.4rem;
                     }
                     }
@@ -361,7 +418,7 @@
                         white-space: nowrap;
                         position: relative;
                         right: 110px;
-                        top: -4px;
+                        top: 30px;
                        white-space: nowrap;
                        
                     }
@@ -381,7 +438,7 @@
     
                     @include tablet{
                         position: relative;
-                        top: -325px;
+                        top: -285px;
                         right:90px;
                         padding: 1.5rem 3rem 2.5rem 3rem;
                         font-size: 1.5rem;
@@ -390,7 +447,15 @@
                         white-space: nowrap;
                     }
                 }
-    
+                hr{
+                    border: none;
+                    background-color:$mercury;
+                    height: 2px;
+                    margin: 40px 0 20px 0px;
+                    width: 100%;
+                  
+                    
+                 }
             }
             &__fifth{
                 &__text{
@@ -403,7 +468,7 @@
                         white-space: nowrap;
                         position: relative;
                         right: 60px;
-                        top: -4px;
+                        top: 30px;
                         font-size: 1.5rem;
                     }
                     
@@ -422,7 +487,7 @@
                     white-space: nowrap;
                     position: relative;
                     right: 38px;
-                    top: -4px;
+                    top: 30px;
                     font-size:1.4rem;
                     }
                     }
@@ -437,7 +502,7 @@
                         white-space: nowrap;
                         position: relative;
                         right: 130px;
-                        top: -4px;
+                        top: 30px;
                        white-space: nowrap;
                        
                     }
@@ -457,7 +522,7 @@
     
                     @include tablet{
                         position: relative;
-                        top: -325px;
+                        top: -285px;
                         right:110px;
                         padding: 1.5rem 3rem 2.5rem 3rem;
                         font-size: 1.5rem;
@@ -479,7 +544,7 @@
                         white-space: nowrap;
                         position: relative;
                         right: 80px;
-                        top: -4px;
+                        top: 30px;
                         font-size: 1.5rem;
                     }
                     
@@ -498,7 +563,7 @@
                     white-space: nowrap;
                     position: relative;
                     right: 38px;
-                    top: -4px;
+                    top: 30px;
                     font-size:1.4rem;
                     }
                     }
@@ -513,7 +578,7 @@
                         white-space: nowrap;
                         position: relative;
                         right: 90px;
-                        top: -4px;
+                        top: 30px;
                        white-space: nowrap;
                        
                     }
@@ -533,7 +598,7 @@
     
                     @include tablet{
                         position: relative;
-                        top: -325px;
+                        top: -285px;
                         right:70px;
                         padding: 1.5rem 3rem 2.5rem 3rem;
                         font-size: 1.5rem;
@@ -544,31 +609,7 @@
                 }
     
             }
-            &__btn{
-                font-size: 1.3rem; 
-                text-align: center;
-                align-items: center;
-                padding: 1rem 10.9rem;
-                margin: 20rem 2rem;
-                border-radius: 5px;
-                background-color: $bandSite-black;
-                text-decoration: none;
-                color: $white;
-                font-family: Avenir-regular;
-
-                @include tablet{
-                    
-                    position: relative;
-                    top: -325px;
-                    left: -95px;
-                    padding: 1.5rem 3rem 2.5rem 3rem;
-                    font-size: 1.5rem;
-                    align-items: center;
-                    font-family: Avenir-demi;
-                    white-space: nowrap;
-                }
-            }
-
+            
             &__header{
 
                
