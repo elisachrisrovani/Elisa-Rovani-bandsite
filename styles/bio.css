@@ -789,10 +789,9 @@ footer {
 }
 @media (min-width: 1280px) {
   .biography-container__text {
-    font-size: 1.375rem;
+    font-size: 1.8rem;
     line-height: 2.25rem;
     width: 70%;
-    margin-left: 2.5rem;
   }
 }
 .biography-container__text__signature {
@@ -808,7 +807,6 @@ footer {
 @media (min-width: 1280px) {
   .biography-container__text__signature {
     font-size: 1rem;
-    margin-left: 2.5rem;
   }
 }
 .biography-container__image {
@@ -830,8 +828,8 @@ footer {
 }
 @media (min-width: 1280px) {
   .biography-container__image img {
-    width: 55rem;
-    height: 65vh;
+    width: 95rem;
+    height: 75vh;
   }
 }
 
@@ -842,7 +840,7 @@ article {
 @media (min-width: 1280px) {
   article {
     width: 80%;
-    margin-left: 9.375rem;
+    margin-left: 9.5rem;
     padding: 0;
   }
 }
@@ -862,7 +860,7 @@ article {
 }
 @media (min-width: 1280px) {
   .band-history {
-    width: 60%;
+    width: 80%;
     margin: auto;
   }
 }
@@ -880,8 +878,8 @@ article {
 }
 @media (min-width: 1280px) {
   .band-history__title h3 {
-    font-size: 1.5rem;
-    margin-left: 10rem;
+    font-size: 1.8rem;
+    margin-left: 9.5rem;
     margin-bottom: 0.625rem;
   }
 }
@@ -900,12 +898,13 @@ article {
 }
 @media (min-width: 1280px) {
   .band-history__text {
-    font-size: 0.9375rem;
-    line-height: 1.5rem;
+    font-size: 1.3rem;
+    line-height: 2rem;
     align-items: left;
     width: 50%;
     margin-right: 1.1875rem;
     margin-bottom: 1.25rem;
+    margin-left: 6.5rem;
   }
 }
 
@@ -2355,6 +2354,17 @@ footer {
   font-family: Avenir-demi;
   font-size: 3rem;
 }
+@media (min-width: 1280px) {
+  .message h1 {
+    margin-left: 400px;
+  }
+}
+@media (min-width: 1280px) {
+  .message-container {
+    width: 43%;
+    margin-left: 550px;
+  }
+}
 .message-container hr {
   border: none;
   background-color: #E1E1E1;
@@ -2370,7 +2380,7 @@ footer {
   display: flex;
 }
 .message-container__top img {
-  width: 68px;
+  width: 70px;
   height: 65px;
   border-radius: 80%;
   margin-left: 20px;
@@ -2410,6 +2420,11 @@ footer {
     margin-top: 15px;
   }
 }
+@media (min-width: 1280px) {
+  .message-container__top__list h3 {
+    font-size: 1.3rem;
+  }
+}
 .message-container__top__list p {
   position: relative;
   left: 360px;
@@ -2428,6 +2443,11 @@ footer {
   font-family: Avenir-regular;
   margin: 0;
   width: 90%;
+}
+@media (min-width: 1280px) {
+  .message-container__top__list h4 {
+    font-size: 1.33rem;
+  }
 }
 .message-container__top__list hr {
   border: none;
@@ -2450,6 +2470,11 @@ footer {
   position: absolute;
   left: 20px;
   margin-bottom: 305px;
+}
+@media (min-width: 1280px) {
+  .message-container__top__list div {
+    margin-left: 570px;
+  }
 }
 .message-container__top__form {
   max-height: -moz-fit-content;
@@ -2494,20 +2519,24 @@ footer {
   left: 20px;
   text-align: left;
   font-size: 1.2rem;
+  background-color: #FAFAFA;
 }
 .message-container__top__form__name__input ::-moz-placeholder {
   font-family: Avenir-regular;
   font-size: 2rem;
-  text-align: left;
 }
 .message-container__top__form__name__input ::placeholder {
   font-family: Avenir-regular;
   font-size: 2rem;
-  text-align: left;
 }
 @media (min-width: 768px) {
   .message-container__top__form__name__input {
     width: 755px;
+  }
+}
+@media (min-width: 1280px) {
+  .message-container__top__form__name__input {
+    width: 660px;
   }
 }
 .message-container__top__form__comment {
@@ -2537,12 +2566,19 @@ footer {
   top: -90px;
   left: 20px;
   font-size: 1.2rem;
+  background-color: #FAFAFA;
 }
 @media (min-width: 768px) {
   .message-container__top__form__comment__input {
     height: 160px;
     width: 755px;
     top: -60px;
+    padding: 0px 120px 80px 16px;
+  }
+}
+@media (min-width: 1280px) {
+  .message-container__top__form__comment__input {
+    width: 665px;
   }
 }
 .message-container__top__form__btn {
@@ -2572,6 +2608,17 @@ footer {
     height: 65px;
     top: -5px;
     left: 530px;
+    font-size: 1.5rem;
+    font-family: Avenir-demi;
+    margin-bottom: 35px;
+  }
+}
+@media (min-width: 1280px) {
+  .message-container__top__form__btn {
+    width: 230px;
+    height: 65px;
+    top: -5px;
+    left: 440px;
     font-size: 1.5rem;
     font-family: Avenir-demi;
     margin-bottom: 35px;
