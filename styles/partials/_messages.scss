@@ -198,6 +198,15 @@
                 font-family: Avenir-regular;
                 position: relative;
                 top: -80px;
+
+                &:hover{
+                    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+                  //  padding-bottom: 1.7rem;
+                }
+                &:active{
+                    transform: translateY(4px);
+                }
+                
                 }
             }
             

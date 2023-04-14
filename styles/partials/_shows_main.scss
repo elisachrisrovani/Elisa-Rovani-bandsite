@@ -30,7 +30,7 @@
    
     &-container{
         li{
-            height: 415px;
+         
            
             @include tablet{
                display: flex;
@@ -98,6 +98,7 @@
                 
             }
             li{
+               // height: 400px;
                 @include tablet{
                     height: 110px;
                     width: 250%;

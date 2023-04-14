@@ -1778,9 +1778,6 @@ footer {
     top: 75px;
   }
 }
-.shows-container li {
-  height: 415px;
-}
 @media (min-width: 768px) {
   .shows-container li {
     display: flex;
@@ -2535,4 +2532,10 @@ footer {
   font-family: Avenir-regular;
   position: relative;
   top: -80px;
+}
+.message-container__top__form__btn:hover {
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+}
+.message-container__top__form__btn:active {
+  transform: translateY(4px);
 }/*# sourceMappingURL=bio.css.map */
