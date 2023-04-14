@@ -25,22 +25,31 @@ messageForm.addEventListener("submit", (event) =>{
   event.preventDefault();
   console.log(event.target.userName.value);
   console.log(event.target.message.value);
+
   console.log(event);
 
-  let userName =event.target.userName.value;
+  let userName =event.target.userName.value;  
   let message = event.target.message.value;
+  
+
+  const divElementAvatar = document.createElement('div');
+    divElementAvatar.classList.add(".message-container__top__list__avatar");
 
   const listItem = document.createElement('li');
   listItem.classList.add('message-container__top__list__item');
   listItem.innerText = userName;
 
-  const messageItem = document.createElement('li');
+    const messageItem = document.createElement('h4');
   messageItem.classList.add('message-container__top__list__message');
   messageItem.innerText = message;
+ 
+  const hrElementPost = document.createElement('hr');
+    hrElementPost.classList.add(".message-container__top__list__hr")
 
-
-  messageList.appendChild(listItem);
+  messageList.appendChild(divElementAvatar)
+  messageList.appendChild(listItem); 
   messageList.appendChild(messageItem);
+  messageList.appendChild(hrElementPost);
 
 });
 

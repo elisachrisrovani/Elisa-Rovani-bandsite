@@ -2380,6 +2380,25 @@ footer {
   position: relative;
   top: 12px;
 }
+.message-container__top__list {
+  list-style-type: none;
+}
+.message-container__top__list__item {
+  color: #323232;
+  font-size: 1.5rem;
+  font-family: Avenir-bold;
+  margin-bottom: 65px;
+  position: relative;
+  left: -10px;
+}
+.message-container__top__list__message {
+  line-height: 2rem;
+  width: 80%;
+  color: #323232;
+  font-size: 1.5rem;
+  font-family: Avenir-regular;
+  margin: 1rem;
+}
 .message-container__top__list h3 {
   position: relative;
   left: -10px;
@@ -2391,7 +2410,7 @@ footer {
 }
 .message-container__top__list p {
   position: relative;
-  left: 390px;
+  left: 360px;
   top: -55px;
   color: #AFAFAF;
   font-size: 1.3rem;
@@ -2406,6 +2425,7 @@ footer {
   font-size: 1.5rem;
   font-family: Avenir-regular;
   margin: 0;
+  width: 90%;
 }
 .message-container__top__list hr {
   border: none;
@@ -2430,7 +2450,8 @@ footer {
   margin-bottom: 305px;
 }
 .message-container__top__form {
-  height: 1400px;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
 }
 .message-container__top__form hr {
   border: none;
