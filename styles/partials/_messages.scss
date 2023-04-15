@@ -15,7 +15,7 @@
     &-container{
 
         @include desktop{
-            width: 43%;
+            width: 45%;
             margin-left: 550px;
         }
         hr{
@@ -32,9 +32,7 @@
        
         &__top{
             display: flex;
-           //height: 2050px;
             
-
             img{
                 width: 70px;
                 height: 65px;
@@ -44,9 +42,37 @@
                 top: 12px;
                 
             }
-            &__list{
+            &__posted{
+            
                 list-style-type: none;
                // height: fit-content;
+              
+                &__item{
+                    color: $bandSite-black;
+                    font-size: 1.5rem;
+                    font-family: Avenir-bold;
+                    margin-bottom: 65px;
+                    position: relative;
+                    left: -50px;
+                    list-style-type: none;
+                    
+                }
+                &__message{
+                   
+                    line-height: 2.0rem;
+                    width: 80%;
+                    color: $bandSite-black;
+                    font-size: 1.5rem;
+                    font-family: Avenir-regular;                 ;
+                    margin: 1rem
+                }
+               
+        }
+
+            &__list{
+                list-style-type: none;
+             //  height: fit-content;
+             
               
                 &__item{
                     color: $bandSite-black;
@@ -90,6 +116,12 @@
                     color: $silver;
                     font-size: 1.3rem;
                     font-family: Avenir-regular;
+                    @include tablet{
+                        left: 680px;
+                    }
+                    @include desktop{
+                        left: 550px;
+                    }
                 }
                 h4{
                     position: relative;
@@ -103,7 +135,7 @@
                     width:90%;
 
                     @include desktop{
-                        font-size: 1.33rem;
+                        font-size: 1.3rem;
                     }
                 }
                 hr{

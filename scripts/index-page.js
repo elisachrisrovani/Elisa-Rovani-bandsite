@@ -39,17 +39,18 @@ messageForm.addEventListener("submit", (event) =>{
   listItem.classList.add('message-container__top__list__item');
   listItem.innerText = userName;
 
-    const messageItem = document.createElement('h4');
+  // const dateItem = document.createElement('p');
+  // dateItem.classList.add('message-container__top__list__item');
+  // listItem.dataset = date;
+
+  const messageItem = document.createElement('h4');
   messageItem.classList.add('message-container__top__list__message');
   messageItem.innerText = message;
  
-  const hrElementPost = document.createElement('hr');
-    hrElementPost.classList.add(".message-container__top__list__hr")
 
   messageList.appendChild(divElementAvatar)
   messageList.appendChild(listItem); 
   messageList.appendChild(messageItem);
-  messageList.appendChild(hrElementPost);
 
 });
 

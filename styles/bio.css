@@ -89,7 +89,7 @@ header {
 }
 @media (min-width: 1280px) {
   .nav-bar__nav-item__title {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 .nav-bar__nav-item__title--highlighted {
@@ -119,7 +119,7 @@ header {
   .nav-bar__nav-item__title--highlighted {
     padding: 1.7rem 0;
     border-width: 0.29rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 .nav-bar__nav-item__title:hover {
@@ -404,7 +404,7 @@ header {
 }
 @media (min-width: 1280px) {
   .nav-bar__nav-item__title {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 .nav-bar__nav-item__title--highlighted {
@@ -434,7 +434,7 @@ header {
   .nav-bar__nav-item__title--highlighted {
     padding: 1.7rem 0;
     border-width: 0.29rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 .nav-bar__nav-item__title:hover {
@@ -885,8 +885,8 @@ article {
 }
 .band-history__text {
   font-family: Avenir-regular;
-  font-size: 0.875rem;
-  line-height: 1.375rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 @media (min-width: 768px) {
   .band-history__text {
@@ -1082,7 +1082,7 @@ header {
 }
 @media (min-width: 1280px) {
   .nav-bar__nav-item__title {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 .nav-bar__nav-item__title--highlighted {
@@ -1112,7 +1112,7 @@ header {
   .nav-bar__nav-item__title--highlighted {
     padding: 1.7rem 0;
     border-width: 0.29rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 .nav-bar__nav-item__title:hover {
@@ -1511,7 +1511,7 @@ header {
 }
 @media (min-width: 1280px) {
   .nav-bar__nav-item__title {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 .nav-bar__nav-item__title--highlighted {
@@ -1541,7 +1541,7 @@ header {
   .nav-bar__nav-item__title--highlighted {
     padding: 1.7rem 0;
     border-width: 0.29rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 .nav-bar__nav-item__title:hover {
@@ -1919,7 +1919,7 @@ footer {
 @media (min-width: 768px) {
   .shows-container__block__btn {
     position: relative;
-    top: -285px;
+    top: -295px;
     left: -95px;
     padding: 1.5rem 3rem 2.5rem 3rem;
     font-size: 1.5rem;
@@ -2000,7 +2000,7 @@ footer {
 @media (min-width: 768px) {
   .shows-container__block__second__btn {
     position: relative;
-    top: -285px;
+    top: -295px;
     right: 85px;
     padding: 1.5rem 3rem 2.5rem 3rem;
     font-size: 1.5rem;
@@ -2074,7 +2074,7 @@ footer {
 @media (min-width: 768px) {
   .shows-container__block__third__btn {
     position: relative;
-    top: -285px;
+    top: -295px;
     right: 70px;
     padding: 1.5rem 3rem 2.5rem 3rem;
     font-size: 1.5rem;
@@ -2156,7 +2156,7 @@ footer {
 @media (min-width: 768px) {
   .shows-container__block__fourth__btn {
     position: relative;
-    top: -285px;
+    top: -295px;
     right: 90px;
     padding: 1.5rem 3rem 2.5rem 3rem;
     font-size: 1.5rem;
@@ -2238,7 +2238,7 @@ footer {
 @media (min-width: 768px) {
   .shows-container__block__fifth__btn {
     position: relative;
-    top: -285px;
+    top: -295px;
     right: 110px;
     padding: 1.5rem 3rem 2.5rem 3rem;
     font-size: 1.5rem;
@@ -2313,7 +2313,7 @@ footer {
 @media (min-width: 768px) {
   .shows-container__block__sixth__btn {
     position: relative;
-    top: -285px;
+    top: -295px;
     right: 70px;
     padding: 1.5rem 3rem 2.5rem 3rem;
     font-size: 1.5rem;
@@ -2361,7 +2361,7 @@ footer {
 }
 @media (min-width: 1280px) {
   .message-container {
-    width: 43%;
+    width: 45%;
     margin-left: 550px;
   }
 }
@@ -2386,6 +2386,26 @@ footer {
   margin-left: 20px;
   position: relative;
   top: 12px;
+}
+.message-container__top__posted {
+  list-style-type: none;
+}
+.message-container__top__posted__item {
+  color: #323232;
+  font-size: 1.5rem;
+  font-family: Avenir-bold;
+  margin-bottom: 65px;
+  position: relative;
+  left: -50px;
+  list-style-type: none;
+}
+.message-container__top__posted__message {
+  line-height: 2rem;
+  width: 80%;
+  color: #323232;
+  font-size: 1.5rem;
+  font-family: Avenir-regular;
+  margin: 1rem;
 }
 .message-container__top__list {
   list-style-type: none;
@@ -2433,6 +2453,16 @@ footer {
   font-size: 1.3rem;
   font-family: Avenir-regular;
 }
+@media (min-width: 768px) {
+  .message-container__top__list p {
+    left: 680px;
+  }
+}
+@media (min-width: 1280px) {
+  .message-container__top__list p {
+    left: 550px;
+  }
+}
 .message-container__top__list h4 {
   position: relative;
   left: -10px;
@@ -2446,7 +2476,7 @@ footer {
 }
 @media (min-width: 1280px) {
   .message-container__top__list h4 {
-    font-size: 1.33rem;
+    font-size: 1.3rem;
   }
 }
 .message-container__top__list hr {
