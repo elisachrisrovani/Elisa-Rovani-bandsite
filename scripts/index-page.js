@@ -1,6 +1,7 @@
 const messageForm = document.getElementById("messageForm");
 const messageList = document.querySelector(".message-container__top__list");
 
+
 const messages = [
   {
     name: 'Connor Walton',
@@ -21,36 +22,52 @@ const messages = [
 
 //To post comments
 
+
+
 messageForm.addEventListener("submit", (event) =>{
   event.preventDefault();
-  console.log(event.target.userName.value);
+  console.log(event.target.userName.value); 
   console.log(event.target.message.value);
+ 
 
   console.log(event);
 
   let userName =event.target.userName.value;  
   let message = event.target.message.value;
-  
+  const newMessage = {
+    name: userName,
+    date: Date.now().getFullYear,
+    message: message,    
+  };  
 
-  const divElementAvatar = document.createElement('div');
-    divElementAvatar.classList.add(".message-container__top__list__avatar");
+    
+ // newMessage.createElement('li');
+//  newMessage.classList.add('message-container__top__list__item');
+
+  messages.unshift(newMessage);
+
+   const divElementAvatar = document.createElement('div');
+   divElementAvatar.classList.add(".message-container__top__list__avatar");
 
   const listItem = document.createElement('li');
   listItem.classList.add('message-container__top__list__item');
-  listItem.innerText = userName;
+  listItem.innerText = newMessage.name;
 
-  // const dateItem = document.createElement('p');
-  // dateItem.classList.add('message-container__top__list__item');
-  // listItem.dataset = date;
+  const dateItem = document.createElement('p');
+  dateItem.classList.add('message-container__top__list__item');
+  listItem.dataset = newMessage.date;
 
   const messageItem = document.createElement('h4');
   messageItem.classList.add('message-container__top__list__message');
-  messageItem.innerText = message;
+  messageItem.innerText = newMessage.message;
  
 
   messageList.appendChild(divElementAvatar)
   messageList.appendChild(listItem); 
+  messageList.appendChild(dateItem);
   messageList.appendChild(messageItem);
+
+  
 
 });
 
@@ -64,8 +81,7 @@ appendMessages();
 
   function displayMessage(message) {
     const messageLi = document.createElement("li");
-    //messageLi.innerText = message.message;
-    //messageList.appendChild(messageLi);
+   
   }
 
 function appendMessages() {
@@ -73,9 +89,7 @@ function appendMessages() {
   for (let i = 0; i < messages.length; i++) {
     displayMessage(messages[i]);
 
-    // const messageLi = document.createElement("li");
-    // messageLi.innerText = messages[i].message;
-    // messageList.appendChild(messageLi);
+  
 
     const postedName = document.createElement("h3");
     postedName.innerText = messages[i].name;
