@@ -1,0 +1,324 @@
+@import './variables';
+@import './mixins';
+
+.message{
+
+   
+    h1{
+        font-family: Avenir-demi;
+        font-size: 3rem;
+
+        @include desktop{
+          margin-left: 400px;
+        }
+    }
+    &-container{
+
+        @include desktop{
+            width: 45%;
+            margin-left: 550px;
+        }
+        hr{
+            border: none;
+                    background-color:$mercury;
+                    height: 2px;
+                    margin: 0;
+                    padding: 0 70px;
+                    position: relative;
+                    width: 90%;
+                    top: -55px;
+                    left: -145px;
+        }
+       
+        &__top{
+            display: flex;
+            
+            img{
+                width: 70px;
+                height: 65px;
+                border-radius: 80%;
+                margin-left: 20px;
+                position: relative;
+                top: 12px;
+                
+            }
+            &__posted{
+            
+                list-style-type: none;
+               // height: fit-content;
+              
+                &__item{
+                    color: $bandSite-black;
+                    font-size: 1.5rem;
+                    font-family: Avenir-bold;
+                    margin-bottom: 65px;
+                    position: relative;
+                    left: -50px;
+                    list-style-type: none;
+                    
+                }
+                &__message{
+                   
+                    line-height: 2.0rem;
+                    width: 80%;
+                    color: $bandSite-black;
+                    font-size: 1.5rem;
+                    font-family: Avenir-regular;                 ;
+                    margin: 1rem
+                }
+               
+        }
+
+            &__list{
+                list-style-type: none;
+             //  height: fit-content;
+             
+              
+                &__item{
+                    color: $bandSite-black;
+                    font-size: 1.5rem;
+                    font-family: Avenir-bold;
+                    margin-bottom: 65px;
+                    position: relative;
+                    left: -10px;
+                    
+                }
+                &__message{
+                   
+                    line-height: 2.0rem;
+                    width: 80%;
+                    color: $bandSite-black;
+                    font-size: 1.5rem;
+                    font-family: Avenir-regular;                 ;
+                    margin: 1rem
+                }
+               
+                h3{
+                    position: relative;
+                    left: -10px;
+                    top: -5px;
+                    color: $bandSite-black;
+                    font-size: 1.5rem;
+                    font-family: Avenir-bold;
+                    margin: 0;
+
+                    @include tablet{
+                        margin-top: 15px;
+                    }
+                    @include desktop{
+                        font-size: 1.3rem;
+                    }
+                }
+                p{
+                    position: relative;
+                    left: 360px;
+                    top: -55px;
+                    color: $silver;
+                    font-size: 1.3rem;
+                    font-family: Avenir-regular;
+                    @include tablet{
+                        left: 680px;
+                    }
+                    @include desktop{
+                        left: 550px;
+                    }
+                }
+                h4{
+                    position: relative;
+                    left: -10px;
+                    line-height: 2.5rem;
+                    top: -65px;
+                    color: $bandSite-black;
+                    font-size: 1.5rem;
+                    font-family: Avenir-regular;
+                    margin: 0;
+                    width:90%;
+
+                    @include desktop{
+                        font-size: 1.3rem;
+                    }
+                }
+                hr{
+                    border: none;
+                    background-color:$mercury;
+                    height: 2px;
+                    margin: 0;
+                    padding: 0 80px;
+                    position: relative;
+                    width: 100%;
+                    top: -55px;
+                    left: -145px;
+
+                   
+                    
+                 }
+                 div{
+                    background-color: $mercury;
+                    border: 1px solid $mercury;
+                    width: 65px;
+                    height: 60px;
+                    border-radius: 80%;
+                    margin-left: 20px;
+                    position: absolute;
+                    left: 20px;
+                    margin-bottom: 305px;
+
+                    @include desktop{
+                        margin-left: 570px;
+                    }
+                 }
+            }
+            
+            
+            
+            &__form{
+              
+                max-height: fit-content;
+                hr{
+                    border: none;
+                    background-color:$mercury;
+                    height: 2px;
+                    margin: 0;
+                    padding: 0 70px;
+                    margin: 0 2rem;
+                    position: relative;
+                    width: 85%;
+                    top: -55px;
+                    left: -105px;
+                    
+                    @include tablet{
+                        top: -10px;
+                      //  margin-top: 25px;
+                    }
+                    
+                 }
+                
+                &__name{
+                    position: relative;
+                    left: 20px;
+                    top: -25px;
+                    color: $silver;
+                    font-size: 1rem;
+                    font-family: Avenir-regular;
+                    &__input{
+                        padding: 15px 120px 15px 16px;
+                        width: 500px;
+                        margin: 15px 0px;
+                        box-sizing: border-box;
+                        border: 3px solid $mercury;
+                        background-color: $white;
+                        border-radius: 5px;
+                        font-family: Avenir-regular;
+                        position: relative;
+                        top: -50px;
+                        left: 20px;
+                        text-align: left;
+                        font-size: 1.2rem;
+                        background-color: $alabaster;
+                        
+                            ::placeholder{
+                                font-family: Avenir-regular;
+                                font-size: 2rem;
+                               
+                                
+                            
+                        }
+                        @include tablet{
+                            width: 755px;
+                        }
+                        @include desktop{
+                            width: 660px;
+                        }
+                    }
+                }
+                &__comment{
+                    position: relative;
+                    left: 20px;
+                    top: -65px;
+                    color: $silver;
+                    font-size: 1rem;
+                    font-family: Avenir-regular;
+
+                    @include tablet{
+                        top: -40px;
+                    }
+                    &__input{
+                        padding: 0px 120px 130px 16px;
+                        height: 210px;
+                        width: 500px;
+                        margin: 15px 0px;
+                        box-sizing: border-box;
+                        border: 3px solid $mercury;
+                        background-color: $white;
+                        border-radius: 5px;
+                        font-family: Avenir-regular;
+                        position: relative;
+                        top: -90px;
+                        left: 20px;
+                        font-size: 1.2rem;
+                        background-color: $alabaster;
+                        
+                       
+
+                        @include tablet{
+                            height: 160px;
+                            width: 755px;
+                            top: -60px;
+                            padding: 0px 120px 80px 16px;
+
+                        }
+                        @include desktop{
+                            width: 665px;
+                        }
+                    }
+                }
+
+                &__btn{
+                width: 500px;
+                height: 100px;
+                font-size: 1.7rem; 
+                text-align: center;
+                align-items: center;
+                margin: 0 1rem;
+                border-radius: 5px;
+                background-color: $bandSite-black;
+                text-decoration: none;
+                color: $white;
+                font-family: Avenir-regular;
+                position: relative;
+                top: -60px;
+
+               
+                &:hover{
+                    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+                 
+                }
+                &:active{
+                    transform: translateY(4px);
+                }
+                @include tablet{
+                    width: 230px;
+                    height: 65px;
+                    top: -05px;
+                    left: 530px;
+                    font-size: 1.5rem;
+                    font-family: Avenir-demi;
+                    margin-bottom: 35px;
+                }
+                @include desktop{
+                    width: 230px;
+                    height: 65px;
+                    top: -05px;
+                    left: 440px;
+                    font-size: 1.5rem;
+                    font-family: Avenir-demi;
+                    margin-bottom: 35px;
+                }
+                
+                }
+            }
+            
+
+        }
+    }
+}

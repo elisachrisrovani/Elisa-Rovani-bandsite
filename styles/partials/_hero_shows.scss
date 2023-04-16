@@ -1,0 +1,107 @@
+@import './mixins';
+@import './global';
+@import './variables';
+
+
+
+.hero-shows{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/assets/images/hero-shows.jpg);
+    height: 50vh;
+    min-width: auto;
+    background-size:cover;
+    margin-bottom: 0;
+   
+    
+    @include tablet{
+        height: 80vh;
+        width: 100%;
+        
+    }
+    
+    
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0rem;
+        right: 0rem;
+        bottom: 0rem;
+        left: 0rem;
+        background-color: rgba(50,50,50,0.50);
+    }
+    
+    &__title{
+
+               
+        &--album{
+        font-size: 1.3rem;
+        color:$white;
+        position: relative;
+        font-family: Avenir-regular;
+        left: 265px;
+        bottom: 6rem;
+        width: 500px;
+       
+        
+        @include tablet{
+            font-size: 3rem;
+            width: 600px;
+            position: absolute;
+            left: 60px;
+            top: 4rem;
+            font-family: Avenir-demi;
+        }
+        @include desktop{
+            font-size: 2.3rem;
+            position: absolute;
+            left: 10%;
+            top: 6rem;
+            font-family: Avenir-regular;
+        }
+    }
+    &--music{
+        font-size: 2.5rem;
+        color:$white;
+        position: relative;
+        font-family: Avenir-regular;
+        left: 260px;
+        bottom: 5.5rem;
+        width: 70%;
+       
+        @include tablet{
+            font-size: 4.3rem;
+            width: 600px;
+            bottom: 5rem;
+            left: 140px;
+        }
+
+        @include desktop{
+            font-size: 4.8rem;
+            width: 55%;
+            bottom: 0.3rem;
+            left: 75px;
+
+        }
+    }
+}
+   
+}
+.hero-soundcloud{
+
+    position: relative;
+    top: 130px;
+    left: -250px;
+    @include tablet{
+        top: 250px;
+        left: -465px;
+    }
+    @include desktop{
+        top: 10px;
+        left:-85px;
+    }    
+    
+}
