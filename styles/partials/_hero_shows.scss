@@ -51,7 +51,7 @@
             font-size: 1.8rem;
             width: 600px;
             position: absolute;
-            left: 15px;
+            left: 35px;
             top: 2rem;
             font-family: Avenir-regular;
         }
@@ -76,14 +76,14 @@
             font-size: 4rem;
             width: 600px;
             bottom: 5rem;
-            left: 150px;
+            left: 65px;
         }
 
         @include desktop{
-            font-size: 4.8rem;
+            font-size: 4.6rem;
             width: 55%;
             bottom: 0.3rem;
-            left: 75px;
+            left: 155px;
 
         }
     }
@@ -97,11 +97,11 @@
     left: -250px;
     @include tablet{
         top: 150px;
-        left: -425px;
+        left: -535px;
     }
     @include desktop{
         top: 10px;
-        left:-85px;
+        left:-135px;
     }    
     
 }

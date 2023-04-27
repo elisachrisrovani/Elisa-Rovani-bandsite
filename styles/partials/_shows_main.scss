@@ -34,7 +34,7 @@
 
         @include desktop{
             width: 55%;
-            margin-left: 650px;
+            margin-left: 500px;
 
         }
 
@@ -127,10 +127,12 @@
                         position: relative;
                         right: -3px;
                         top: -260px;
-                       // padding: 0 30rem;
                         width: 95%;
                         
                       
+                    }
+                    @include desktop{
+                        width: 100%;
                     }
                  }
                
@@ -225,7 +227,7 @@
                         white-space: nowrap;
                     }
                     @include desktop{
-                        left: 755px;
+                        left: 640px;
                        
                     }
                 }
