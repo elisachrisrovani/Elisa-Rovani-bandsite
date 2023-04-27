@@ -44,13 +44,13 @@ for(let i = 0; i < showsArray.length; i++){
     // list.onfocus = buttonHandler;
     // list.addEventListener('click', buttonHandler);
 
-    // document.querySelectorAll("li").forEach(function (list){
+    // document.querySelectorAll("div").forEach(function (list){
     // list.addEventListener('mouseover', buttonHandler),
     // list.removeEventListener('mouseleave', buttonHandler)      
             
     // })
     // function buttonHandler (){
-    //    document.body.style.backgroundColor ='#E1E1E1'
+    // document.body.style.backgroundColor ='#E1E1E1'
        
     // }
 
