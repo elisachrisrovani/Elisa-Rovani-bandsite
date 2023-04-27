@@ -49,7 +49,7 @@ messageForm.addEventListener("submit", (event) =>{
    const divElementAvatar = document.createElement('div');
    divElementAvatar.classList.add(".message-container__top__list__avatar");
 
-  const listItem = document.createElement('li');
+  const listItem = document.createElement('div');
   listItem.classList.add('message-container__top__list__item');
   listItem.innerText = newMessage.name;
 
@@ -73,7 +73,7 @@ messageForm.addEventListener("submit", (event) =>{
 
 
 
-appendMessages();
+prependMessages();
 
 
 

@@ -38,22 +38,22 @@
 
                
         &--album{
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         color:$white;
         position: relative;
         font-family: Avenir-regular;
-        left: 265px;
-        bottom: 6rem;
+        left: 250px;
+        bottom: 4rem;
         width: 500px;
        
         
         @include tablet{
-            font-size: 3rem;
+            font-size: 1.8rem;
             width: 600px;
             position: absolute;
-            left: 60px;
-            top: 4rem;
-            font-family: Avenir-demi;
+            left: 15px;
+            top: 2rem;
+            font-family: Avenir-regular;
         }
         @include desktop{
             font-size: 2.3rem;
@@ -64,19 +64,19 @@
         }
     }
     &--music{
-        font-size: 2.5rem;
+        font-size: 1.8rem;
         color:$white;
         position: relative;
         font-family: Avenir-regular;
-        left: 260px;
-        bottom: 5.5rem;
-        width: 70%;
+        left: 250px;
+        bottom: 5.2rem;
+        width: 60%;
        
         @include tablet{
-            font-size: 4.3rem;
+            font-size: 4rem;
             width: 600px;
             bottom: 5rem;
-            left: 140px;
+            left: 150px;
         }
 
         @include desktop{
@@ -93,11 +93,11 @@
 .hero-soundcloud{
 
     position: relative;
-    top: 130px;
+    top: 80px;
     left: -250px;
     @include tablet{
-        top: 250px;
-        left: -465px;
+        top: 150px;
+        left: -425px;
     }
     @include desktop{
         top: 10px;
