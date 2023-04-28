@@ -34,9 +34,9 @@ messageForm.addEventListener("submit", (event) =>{
 
   let userName =event.target.userName.value;  
   let message = event.target.message.value;
+  
   const newMessage = {
     name: userName,
-    date: Date.now().getFullYear,
     message: message,    
   };  
 
@@ -61,11 +61,15 @@ messageForm.addEventListener("submit", (event) =>{
   messageItem.classList.add('message-container__top__list__message');
   messageItem.innerText = newMessage.message;
  
+  const hrItem = document.createElement('hr');
+  hrItem.classList.add(".message-container__top__list")
+
 
   messageList.appendChild(divElementAvatar)
   messageList.appendChild(listItem); 
   messageList.appendChild(dateItem);
   messageList.appendChild(messageItem);
+  messageList.appendChild(hrItem);
 
   
 

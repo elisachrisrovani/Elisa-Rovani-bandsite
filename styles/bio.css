@@ -2062,7 +2062,7 @@ footer {
 }
 .message-container__top__list__item {
   color: #323232;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-family: Avenir-bold;
   margin-bottom: 65px;
   position: relative;
@@ -2072,9 +2072,8 @@ footer {
   line-height: 2rem;
   width: 80%;
   color: #323232;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-family: Avenir-regular;
-  margin: 1rem;
 }
 .message-container__top__list h3 {
   position: relative;

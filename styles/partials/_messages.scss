@@ -93,7 +93,7 @@
               
                 &__item{
                     color: $bandSite-black;
-                    font-size: 1.5rem;
+                    font-size: 1rem;
                     font-family: Avenir-bold;
                     margin-bottom: 65px;
                     position: relative;
@@ -105,10 +105,13 @@
                     line-height: 2.0rem;
                     width: 80%;
                     color: $bandSite-black;
-                    font-size: 1.5rem;
+                    font-size: 1rem;
                     font-family: Avenir-regular;                 ;
-                    margin: 1rem
+                    //margin: 1rem;
+
+                    
                 }
+               
                
                 h3{
                     position: relative;
