@@ -181,7 +181,7 @@ article{
        
 
         @include tablet{
-            font-size: 1.0625rem;
+            font-size: 1rem;
             line-height: 1.75rem;
             align-items: left;
             width: 40%;
@@ -189,8 +189,7 @@ article{
            
         }
         @include desktop{
-            font-size: 1.3rem;
-            line-height: 2rem;
+            
             align-items: left;
             width: 50%;
             margin-right: 1.1875rem;

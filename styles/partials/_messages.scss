@@ -88,8 +88,38 @@
 
             &__list{
                 list-style-type: none;
-             //  height: fit-content;
-             
+            
+               
+                    
+                        li{
+                            
+                        img{
+                            height: 25px;
+                            position: relative;
+                            left: 430px;
+                            top: -10px;
+                            margin: 0;
+                            padding: 0;
+                        }
+                        h5{
+                            position: relative;
+                            left: 240px;
+                            top: -35px;
+                            color: $silver;
+                            font-size: 1rem;
+                            font-family: Avenir-regular;
+                            width: 100px;
+                            @include tablet{
+                            left: 480px;
+                            top: -55px;
+                        }
+                            @include desktop{
+                            left: 425px;
+                        }
+                          }  
+            }
+                
+              
               
                 &__item{
                     color: $bandSite-black;
@@ -98,6 +128,7 @@
                     margin-bottom: 65px;
                     position: relative;
                     left: -10px;
+
                     
                 }
                 &__message{
@@ -146,6 +177,7 @@
                     @include desktop{
                         left: 425px;
                     }
+                    
                 }
                 h4{
                     position: relative;
@@ -177,9 +209,9 @@
                     padding: 0 80px;
                     position: relative;
                     width: 100%;
-                    top: -55px;
+                    top: -185px;
                     left: -165px;
-
+                    margin-top: 0;
                    
                     
                  }

@@ -1,37 +1,7 @@
-// const showsArray=[
-//     { 
-//         date: 'Mon Sept 06 2021',
-//         venue: 'Ronald Lane',
-//         location: 'San Francisco, CA',
-//     },
-//     {   
-//         date: 'Tue Sept 21 2021',
-//         venue: 'Pier 3 Easter',
-//         location: 'San Francisco, CA',
-//     },
-//     {
-//         date: 'Fri Oct 15 2021',
-//         venue: 'View Lounge',
-//         location: 'San Francisco, CA',
-//     },
-//     {
-//         date: 'Sat Nov 06 2021',
-//         venue: 'Hyatt Agency',
-//         location: 'San Francisco, CA',
-//     },
-//     {
-//         date: 'Fri Nov 26 2021',
-//         venue: 'Moscow Center',
-//         location: 'San Francisco, CA',
-//     },
-//     {
-//         date: 'Wed Dec 15 2021',
-//         venue: 'Press Club',
-//         location: 'San Francisco, CA',
-//     }];
-    
 const showsList = document.querySelector('.shows-container__block');
+const listItem = document.querySelector('.shows-container__block__item');
 const key = "e0eea5f0-0f8c-4b54-9fc4-ff50843766d4";
+
 
 function appendShows(showsArray){
     for (let i = 0; i < showsArray.length; i++){
@@ -42,11 +12,13 @@ function appendShows(showsArray){
     const headerDate = document.createElement('h3');
     headerDate.innerHTML="DATE";
     headerDate.classList.add('shows-container__block__item__header--hidden');
+    
     const dateElement = document.createElement('h3');
 
-    dateElement.innerText = showsArray[i].date;
+    dateElement.innerText = new Date (showsArray[i].date).toLocaleString(Date.UTC).split(',')[0];
     dateElement.classList.add("shows-container__block__item__text--highlighted");
-  
+    
+     
     const headerVenue = document.createElement('h3');
     headerVenue.innerHTML = "VENUE";
     headerVenue.classList.add("shows-container__block__item__header--hidden");
@@ -85,9 +57,17 @@ function appendShows(showsArray){
 
     function loadShows(){
         axios.get(`https://project-1-api.herokuapp.com/showdates?api_key=${key}`).then((response)=>{
+            response.data.sort((a,b)=> b.timestamp - a.timestamp);
             console.log(response.data);
 
             appendShows(response.data);
         })
     }
         loadShows();
+
+        // document.querySelector(".shows-container__block__item").addEventListener('click', event => {
+        //     event.preventDefault();
+        //     document.body.style.backgroundColor = 'pink'
+        // });
+        
+       
