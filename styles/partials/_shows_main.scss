@@ -19,12 +19,12 @@
         
         @include tablet{
             font-size: 3rem;
-            padding-left: 36px;
+            padding-left: 2.25rem;
             
         }
         @include desktop{
             position: relative;
-            top: 75px;
+            top: 4.6875rem;
         }
     }
    
@@ -34,13 +34,13 @@
 
         @include desktop{
             width: 55%;
-            margin-left: 500px;
+            margin-left: 31.25rem;
 
         }
 
                 
         &__top{
-            height: 10px;
+            height: 0.625rem;
          
 
                 @include tablet{
@@ -61,7 +61,7 @@
             color: $silver;
             font-family: Avenir-regular;
             font-size: 1rem;
-            width: 30px;
+            width: 1.875rem;
             padding: 2rem 11.05rem 1rem 0.8rem;
             margin: 0;
             
@@ -79,7 +79,7 @@
             color: $silver;
             font-family: Avenir-regular;
             font-size: 1rem;
-            width: 10px;
+            width: 0.625rem;
             padding: 2rem 0rem 1rem 0;
             margin-top: 0;
             }
@@ -106,7 +106,7 @@
             &__item{
            
                 @include tablet{
-                    height: 80px;
+                    height: 5rem;
                     width: 250%;
                     margin: 0;
                 }
@@ -118,15 +118,15 @@
                    hr{
                     border: none;
                    background-color:$mercury;
-                    height: 2px;
-                    margin: 40px 0 20px 0;
+                    height: 0.125rem;
+                    margin: 2.5rem 0 1.25rem 0;
                     width: 100%;
                     
                     @include tablet{
                     
                         position: relative;
-                        right: -3px;
-                        top: -260px;
+                        right: -0.1875rem;
+                        top: -16.25rem;
                         width: 95%;
                         
                       
@@ -160,12 +160,12 @@
                     padding: 0.2rem 0 1rem 1rem;
                     font-size: 1.2rem;
                     line-height: 1rem;
-                    width: 100px;
+                    width: 6.25rem;
                     @include tablet{
                         white-space: nowrap;
                         position: relative;
-                        right: -225px;
-                        top: -95px;
+                        right: -14.063rem;
+                        top: -5.9375rem;
                         font-size: 1.2rem;
                     }
                     
@@ -183,8 +183,8 @@
                         font-size: 1.5rem;
                         white-space: nowrap;
                         //position: relative;
-                        right: 38px;
-                        top: 40px;
+                        right: 2.375rem;
+                        top: 2.5rem;
                         font-size:1.2rem;
                     }
                     }
@@ -194,13 +194,13 @@
                     padding: 0.2rem 0 1rem 1rem;
                     font-size: 1.2rem;
                     line-height: 1rem;
-                    width: 100px;
+                    width: 6.25rem;
                     @include tablet{
                         font-size: 1.2rem;
                          white-space: nowrap;
                          position: relative;
-                         right: -420px;
-                         top: -190px;
+                         right: -26.25rem;
+                         top: -11.875rem;
                     }
                     }
                     
@@ -220,8 +220,8 @@
                     @include tablet{
                         
                         position: relative;
-                        top: -250px;
-                        left: 655px;
+                        top: -15.625rem;
+                        left: 40.9375rem;
                         padding: 1rem 3rem 1rem 3rem;
                         font-size: 1rem;
                         align-items: center;
@@ -229,7 +229,7 @@
                         white-space: nowrap;
                     }
                     @include desktop{
-                        left: 640px;
+                        left: 40rem;
                        
                     }
                 }

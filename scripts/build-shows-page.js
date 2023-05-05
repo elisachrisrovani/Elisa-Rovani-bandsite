@@ -15,7 +15,7 @@ function appendShows(showsArray){
     
     const dateElement = document.createElement('h3');
 
-    dateElement.innerText = new Date (showsArray[i].date).toLocaleString(Date.UTC).split(',')[0];
+    dateElement.innerText = new Date (showsArray[i].date).toLocaleString("en-US", { weekday: 'short', month: 'short', day: '2-digit', year:"numeric" });
     dateElement.classList.add("shows-container__block__item__text--highlighted");
     
      

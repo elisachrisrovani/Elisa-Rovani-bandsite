@@ -4,10 +4,10 @@
 .message{
 
     @include tablet{
-        margin-left: 30px;
+        margin-left: 1.875rem;
     }
     @include desktop{
-        margin-left: 10px;
+        margin-left: 0.625rem;
     }
    
     h1{
@@ -15,13 +15,13 @@
         font-size: 1.8rem;
 
         @include tablet{
-           margin: 20px 0 30px 10px;
+           margin: 1.25rem 0 1.875rem 0.625rem;
            font-size: 2.3rem;
           
         }
 
         @include desktop{
-          margin-left: 100px;
+          margin-left: 6.25rem;
         }
     }
     &-container{
@@ -29,21 +29,21 @@
         
         @include desktop{
             width: 45%;
-            margin-left: 500px;
+            margin-left: 31.25rem;
         }
         hr{
             border: none;
                     background-color:$mercury;
-                    height: 2px;
+                    height: 0.125rem;
                     margin: 0;
-                    padding: 0 70px;
+                    padding: 0 4.375rem;
                     position: relative;
                     width: 90%;
-                    top: -55px;
-                    left: -145px;
+                    top: -3.4375rem;
+                    left: -9.0625rem;
 
                     @include desktop{
-                        left: -105px;
+                        left: -6.5625rem;
                     }
         }
        
@@ -51,12 +51,12 @@
             display: flex;
             
             img{
-                width: 50px;
-                height: 45px;
+                width: 3.125rem;
+                height: 2.8125rem;
                 border-radius: 80%;
-                margin-left: 20px;
+                margin-left: 1.25rem;
                 position: relative;
-                top: 12px;
+                top: 0.75rem;
                 
             }
             &__posted{
@@ -68,9 +68,9 @@
                     color: $bandSite-black;
                     font-size: 1.5rem;
                     font-family: Avenir-bold;
-                    margin-bottom: 65px;
+                    margin-bottom: 4.0625rem;
                     position: relative;
-                    left: -50px;
+                    left: -3.125rem;
                     list-style-type: none;
                     
                 }
@@ -94,27 +94,45 @@
                         li{
                             
                         img{
-                            height: 25px;
+                            height: 1.57rem;
                             position: relative;
-                            left: 430px;
-                            top: -10px;
+                            left: 15.63rem;
                             margin: 0;
                             padding: 0;
+                            
+                             &:hover{
+                                 opacity: 80%;
+                             
+                             }
+                            &:active{
+                                transform: translateY(4px);
+                            }
+
+                            @include tablet{
+                                left: 30.63rem;
+                                top: -0.5rem;
+                            }
+
+                            @include desktop{
+                            left: 26.88rem;
+                            top: -0.63rem;
+                           
+                            }
                         }
                         h5{
                             position: relative;
-                            left: 240px;
-                            top: -35px;
+                            left: 15rem;
+                            top: -2.19rem;
                             color: $silver;
                             font-size: 1rem;
                             font-family: Avenir-regular;
-                            width: 100px;
+                            width: 6.25rem;
                             @include tablet{
-                            left: 480px;
-                            top: -55px;
+                            left: 30rem;
+                            top: -3.44rem;
                         }
                             @include desktop{
-                            left: 425px;
+                            left: 26.57rem;
                         }
                           }  
             }
@@ -125,9 +143,9 @@
                     color: $bandSite-black;
                     font-size: 1rem;
                     font-family: Avenir-bold;
-                    margin-bottom: 65px;
+                    margin-bottom: 4.07rem;
                     position: relative;
-                    left: -10px;
+                    left: -0.66rem;
 
                     
                 }
@@ -146,44 +164,44 @@
                
                 h3{
                     position: relative;
-                    left: -10px;
-                    top: 1px;
+                    left: -0.625rem;
+                    top: 0.0625rem;
                     color: $bandSite-black;
                     font-size: 1rem;
                     font-family: Avenir-bold;
                     margin: 0;
 
                     @include tablet{
-                        margin-top: 15px;
-                        left: -40px;
-                        top: -10px;
+                        margin-top: 0.938rem;
+                        left: -2.5rem;
+                        top: -0.625rem;
                     }
                     @include desktop{
-                      left:-20px
+                      left:-1.25rem
                     }
                 }
                 p{
                     position: relative;
-                    left: 240px;
-                    top: -35px;
+                    left: 15rem;
+                    top: -2.1875rem;
                     color: $silver;
                     font-size: 1rem;
                     font-family: Avenir-regular;
-                    width: 100px;
+                    width: 6.25rem;
                     @include tablet{
-                        left: 480px;
-                        top: -45px;
+                        left: 30rem;
+                        top: -2.8125rem;
                     }
                     @include desktop{
-                        left: 425px;
+                        left: 26.563rem;
                     }
                     
                 }
                 h4{
                     position: relative;
-                    left: -10px;
+                    left: -0.625rem;
                     line-height: 1.8rem;
-                    top: -40px;
+                    top: -2.5rem;
                     color: $bandSite-black;
                     font-size: 1rem;
                     font-family: Avenir-regular;
@@ -191,26 +209,26 @@
                     width:90%;
 
                     @include tablet{
-                        margin-top: 15px;
-                        left: -40px;
-                        top: -50px;
+                        margin-top: 0.9375rem;
+                        left: -2.5rem;
+                        top: -3.125rem;
                     }
 
                     @include desktop{
                         font-size: 1rem;
-                        left: -20px;
+                        left: -1.25rem;
                     }
                 }
                 hr{
                     border: none;
                     background-color:$mercury;
-                    height: 2px;
+                    height: 0.125rem;
                     margin: 0;
-                    padding: 0 80px;
+                    padding: 0 5rem;
                     position: relative;
                     width: 100%;
-                    top: -185px;
-                    left: -165px;
+                    top: -11.563rem;
+                    left: -10.313rem;
                     margin-top: 0;
                    
                     
@@ -218,16 +236,16 @@
                  div{
                     background-color: $mercury;
                     border: 1px solid $mercury;
-                    width: 45px;
-                    height: 40px;
+                    width: 2.8125rem;
+                    height: 2.5rem;
                     border-radius: 80%;
-                    margin-left: 20px;
+                    margin-left: 1.25rem;
                     position: absolute;
-                    left: 20px;
-                    margin-bottom: 305px;
+                    left: 1.25rem;
+                    margin-bottom: 19.0625rem;
 
                     @include desktop{
-                        margin-left: 530px;
+                        margin-left: 33.300rem;
                     }
                  }
             }
@@ -240,45 +258,45 @@
                 hr{
                     border: none;
                     background-color:$mercury;
-                    height: 2px;
+                    height: 0.125rem;
                     margin: 0;
-                    padding: 0 70px;
+                    padding: 0 4.375rem;
                     margin: 0 2rem;
                     position: relative;
                     width: 85%;
-                    top: -35px;
-                    left: -105px;
+                    top: -2.1875rem;
+                    left: -6.5625rem;
                     
                     @include tablet{
-                        top: -10px;
-                      //  margin-top: 25px;
+                        top: -0.625rem;
+                      //  margin-top: 1.5625rem;
                     }
                     @include desktop{
-                        left: -95px;
+                        left: -5.9375rem;
                     }
                     
                  }
                 
                 &__name{
                     position: relative;
-                    left: 20px;
-                    top: -25px;
+                    left: 1.25rem;
+                    top: -1.5625rem;
                     color: $silver;
                     font-size: 0.85rem;
                     font-family: Avenir-regular;
-                    width: 100px;
+                    width: 6.25rem;
                     &__input{
-                        padding: 5px 120px 5px 10px;
-                        width: 350px;
-                        margin: 15px 0px;
+                        padding: 0.313rem 7.5rem 0.313rem 0.625rem;
+                        width: 21.875rem;
+                        margin: 0.9375rem 0rem;
                         box-sizing: border-box;
-                        border: 1px solid $mercury;
+                        border: 0.0625rem solid $mercury;
                         background-color: $white;
-                        border-radius: 5px;
+                        border-radius: 0.3125rem;
                         font-family: Avenir-regular;
                         position: relative;
-                        top: -45px;
-                        left: 20px;
+                        top: -2.8125rem;
+                        left: 1.25rem;
                         text-align: left;
                         font-size: 1rem;
                         background-color: $alabaster;
@@ -291,70 +309,70 @@
                             
                         }
                         @include tablet{
-                            width: 655px;
+                            width: 40.9375rem;
                         }
                         @include desktop{
-                            width: 600px;
+                            width: 37.5rem;
                         }
                     }
                 }
                 &__comment{
                     position: relative;
-                    left: 20px;
-                    top: -45px;
+                    left: 1.25rem;
+                    top: -2.8125rem;
                     color: $silver;
                     font-size: 0.85rem;
                     font-family: Avenir-regular;
-                    width: 100px;
+                    width: 6.25rem;
 
                     @include tablet{
-                        top: -40px;
+                        top: -2.5rem;
                     }
                     &__input{
-                        padding: 20px 80px 130px 10px;
-                        height: 150px;
-                        width: 350px;
-                        margin: 15px 0px;
+                        padding: 1.25rem 5rem 8.125rem 0.625rem;
+                        height: 9.375rem;
+                        width: 21.875rem;
+                        margin: 0.9375rem 0rem;
                         box-sizing: border-box;
-                        border: 1px solid $mercury;
+                        border: 0.0625rem solid $mercury;
                         background-color: $white;
-                        border-radius: 5px;
+                        border-radius: 0.3125rem;
                         font-family: Avenir-regular;
                         position: relative;
-                        top: -60px;
-                        left: 20px;
+                        top: -3.75rem;
+                        left: 1.25rem;
                         font-size: 1rem;
                         background-color: $alabaster;
                         
                        
 
                         @include tablet{
-                            height: 160px;
-                            width: 655px;
-                            top: -60px;
-                            padding: 0px 120px 80px 16px;
+                            height: 10rem;
+                            width: 40.9375rem;
+                            top: -3.75rem;
+                            padding: 0rem 7.5rem 5rem 1rem;
 
                         }
                         @include desktop{
-                            width: 600px;
+                            width: 37.5rem;
                         }
                     }
                 }
 
                 &__btn{
-                width: 350px;
-                height: 60px;
+                width: 21.875rem;
+                height: 3.75rem;
                 font-size: 1.2rem; 
                 text-align: center;
                 align-items: center;
                 margin: 1rem 1rem;
-                border-radius: 5px;
+                border-radius: 0.3125rem;
                 background-color: $bandSite-black;
                 text-decoration: none;
                 color: $white;
                 font-family: Avenir-regular;
                 position: relative;
-                top: -60px;
+                top: -3.75rem;
 
                
                 &:hover{
@@ -365,22 +383,22 @@
                     transform: translateY(4px);
                 }
                 @include tablet{
-                    width: 230px;
-                    height: 65px;
-                    top: -55px;
-                    left: 430px;
+                    width: 14.375rem;
+                    height: 4.0625rem;
+                    top: -3.4375rem;
+                    left: 26.875rem;
                     font-size: 1.2rem;
                     font-family: Avenir-demi;
-                    margin-bottom: 5px;
+                    margin-bottom: 0.3125rem;
                 }
                 @include desktop{
-                    width: 220px;
-                    height: 55px;
-                    top: -55px;
-                    left: 380px;
+                    width: 13.75rem;
+                    height: 3.4375rem;
+                    top: -3.4375rem;
+                    left: 23.75rem;
                     font-size: 1.2rem;
                     font-family: Avenir-demi;
-                  //  margin-bottom: 5px;
+                 
                 }
                 
                 }

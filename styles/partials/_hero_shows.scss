@@ -42,16 +42,16 @@
         color:$white;
         position: relative;
         font-family: Avenir-regular;
-        left: 250px;
+        left: 15.625rem;
         bottom: 4rem;
-        width: 500px;
+        width: 31.25rem;
        
         
         @include tablet{
             font-size: 1.8rem;
-            width: 600px;
+            width: 37.5rem;
             position: absolute;
-            left: 35px;
+            left: 2.1875rem;
             top: 2rem;
             font-family: Avenir-regular;
         }
@@ -68,22 +68,22 @@
         color:$white;
         position: relative;
         font-family: Avenir-regular;
-        left: 250px;
+        left: 15.625rem;
         bottom: 5.2rem;
         width: 60%;
        
         @include tablet{
             font-size: 4rem;
-            width: 600px;
+            width: 37.5rem;
             bottom: 5rem;
-            left: 65px;
+            left: 4.0625rem;
         }
 
         @include desktop{
             font-size: 4.6rem;
             width: 55%;
             bottom: 0.3rem;
-            left: 155px;
+            left: 9.6875rem;
 
         }
     }
@@ -93,15 +93,15 @@
 .hero-soundcloud{
 
     position: relative;
-    top: 80px;
-    left: -250px;
+    top: 5rem;
+    left: -15.625rem;
     @include tablet{
-        top: 150px;
-        left: -535px;
+        top: 9.375rem;
+        left: -33.4375rem;
     }
     @include desktop{
-        top: 10px;
-        left:-135px;
+        top: 0.625rem;
+        left:-8.4375rem;
     }    
     
 }
