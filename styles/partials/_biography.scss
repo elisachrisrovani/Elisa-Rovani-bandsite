@@ -1,6 +1,7 @@
 @import './mixins';
 @import './variables';
 
+// First part of Biography Section
 
 .title{
     
@@ -136,6 +137,8 @@ article{
     
     
 }
+
+//Second part of Biography Section
 .band-history{
     padding: 0 1rem;
     display: grid;

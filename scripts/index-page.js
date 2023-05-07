@@ -100,7 +100,7 @@ function appendMessages(messagesArray){
         //         console.log(error);
         //     })
         // });
-s
+
 
        
       //Function to delete messages

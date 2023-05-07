@@ -65,9 +65,9 @@ function appendShows(showsArray){
     }
         loadShows();
 
-        // document.querySelector(".shows-container__block__item").addEventListener('click', event => {
-        //     event.preventDefault();
-        //     document.body.style.backgroundColor = 'pink'
-        // });
+        document.querySelector(".shows-container__block__item").addEventListener('click', event => {
+            event.preventDefault();
+            document.body.style.backgroundColor = '#E1E1E1'
+         });
         
        
